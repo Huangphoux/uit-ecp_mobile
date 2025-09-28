@@ -4,7 +4,10 @@ A probject for UIT-SE358 to learn how to manage a software project.
 
 The subject: Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ. (A mobile application to manage online classes for a foreign language center)
 
-# Quy định nộp bài cho nhóm trưởng
-
-- Đặt tên: [tuan01]_[ten].txt
-- Nộp trong thư mục `bai_nop` của giai đoạn hiện thời.
+# Cách làm bài
+- Clone cái repo này về
+- Vào `giai_doan_A\bai_nop\bao_cao_ca_nhan`
+- Mở bằng trình chỉnh sửa văn bản tuỳ thích
+- Thực hiện báo cáo trong tệp tương ứng với tên bản thân
+- Chạy `scripts\phase_A_compile.bat` để compile ra tệp PDF của báo cáo cá nhân.
+- Khi nào xong thì push lên vào báo cho trưởng nhóm.
