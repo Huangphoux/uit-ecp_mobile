@@ -14,6 +14,9 @@
   it
 )
 
+#set heading(numbering: "1.a")
+
+
 = Khởi động dự án
 
 Mục này bao gồm Project Charter và Stakeholder Register.
