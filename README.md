@@ -1,8 +1,12 @@
 # ECP Mobile
 
-A probject for UIT-SE358 to learn how to manage a software project.
+A mock probject for UIT-SE358 to learn how to manage a software project.
 
-The subject: Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ. (A mobile application to manage online classes for a foreign language center)
+The project:
+- Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ.
+- A mobile application to manage online classes for a foreign language center.
+
+Trình soạn PDF: [Typst](https://typst.app/) (`typst.exe`). Do chỉ gói gọn trong một executable mà có thể compile ra PDF nên được Trương Hoàng Phúc tin dùng.
 
 # Cách làm bài
 - Clone cái repo này về
