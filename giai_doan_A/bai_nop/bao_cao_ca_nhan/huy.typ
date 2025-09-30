@@ -1,4 +1,4 @@
-﻿== Giới thiệu dự án
+﻿=== Giới thiệu dự án
 - Tên dự án: Black Myth: Wukong  
 - Studio phát triển: Game Science  
 - Thể loại: Action-RPG, single player  

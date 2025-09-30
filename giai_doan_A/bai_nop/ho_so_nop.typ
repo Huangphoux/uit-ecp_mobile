@@ -31,19 +31,19 @@ Mục này bao gồm WBS và Gantt chart, kèm giải thích các mốc quan tr�
 
 = Báo cáo cá nhân
 
-== 23520657 Vũ Quốc Huy
+== Vũ Quốc Huy
 #include "bao_cao_ca_nhan/huy.typ"
 
-== 23520466 Tạ Hoàng Hiệp
+== Tạ Hoàng Hiệp
 #include "bao_cao_ca_nhan/hiep.typ"
 
-== 23520682 Đỗ Đình Khang
+== Đỗ Đình Khang
 #include "bao_cao_ca_nhan/khang.typ"
 
-== 23521224 Trương Hoàng Phúc
+== Trương Hoàng Phúc
 #include "bao_cao_ca_nhan/phuc.typ"
 
-== 23521736 Bùi Văn Tùng
+== Bùi Văn Tùng
 #include "bao_cao_ca_nhan/tung.typ"
 
 = Retrospective A
