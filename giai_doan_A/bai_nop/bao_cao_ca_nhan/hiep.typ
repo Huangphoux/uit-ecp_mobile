@@ -1,6 +1,6 @@
 === Giới thiệu dự án
 Ở học kì trước, em đã xây dựng ứng dụng game Caro (5-in-a-row) với giao diện trực quan, dễ sử dụng, có thể chơi ở chế độ người với người hoặc người với máy.
-Game sẽ hoạt động trên nền tảng winform (C#), giúp người dùng vừa giải trí vừa rèn luyện tư duy logic.
+Game sẽ hoạt động trên nền tảng winform (C\#), giúp người dùng vừa giải trí vừa rèn luyện tư duy logic.
 
 === Phân tích
 Game có các chức năng chính như:
@@ -17,8 +17,8 @@ Ngoài ra còn có các chức năng bổ sung như:
 ==== Phạm vi
 
 ==== Tiến độ
-Tuần 1–2: Phân tích yêu cầu, thiết kế kiến trúc hệ thống, giao diện.
-Tuần 3–4: Xây dựng chức năng cơ bản (bàn cờ, đánh cờ, kiểm tra thắng).
+Tuần 1-2: Phân tích yêu cầu, thiết kế kiến trúc hệ thống, giao diện.
+Tuần 3-4: Xây dựng chức năng cơ bản (bàn cờ, đánh cờ, kiểm tra thắng).
 Tuần 5: Tích hợp AI cơ bản.
 Tuần 6: Hoàn thiện giao diện, xử lý lỗi.
 Tuần 7: Kiểm thử, tối ưu, viết tài liệu.
@@ -42,7 +42,7 @@ Phân công:
 -1 Tester.
 
 Công nghệ:
--Ngôn ngữ: C#.
+-Ngôn ngữ: C\#.
 -Công cụ: Visual studio, Github.
 
 ==== Rủi ro
