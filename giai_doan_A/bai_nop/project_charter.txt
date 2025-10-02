@@ -1,0 +1,171 @@
+#strong[Project charter]
+
+#strong[Project title:] Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ
+
+#strong[Project sponsor:] Ban Giám đốc Trung tâm Ngoại ngữ ABC
+
+#strong[Project manager:] Nhóm 2
+
+#strong[Date Prepared:] 01/10/2025
+
+#strong[Project customer:] Trung tâm Ngoại ngữ ABC và học viên tham gia khóa học
+
+#strong[Project Purpose:] Tạo ra một hệ thống trực tuyến giúp trung tâm ngoại ngữ quản lý lớp học, giảng viên và học viên hiệu quả hơn; đồng thời cung cấp nền tảng học tập linh hoạt, tiết kiệm thời gian và chi phí vận hành.
+
+#strong[High-level Project Description:]
+
+Ứng dụng mobile cho phép:
+
+- Quản lý lớp học, lịch học, giáo viên, học viên.
+
+- Học viên có thể đăng ký lớp, theo dõi lịch, học trực tuyến.
+
+- Giáo viên có thể tạo bài giảng, điểm danh, chấm điểm, quản lý tài liệu.
+
+- Quản trị viên có thể theo dõi tình trạng lớp học, báo cáo và thống kê.
+
+#strong[Project boundaries:]
+
+- Không phát triển hệ thống thanh toán trực tuyến giai đoạn đầu.
+
+- Chỉ tập trung cho các khóa học ngoại ngữ, chưa tích hợp các ngành học khác.
+
+#strong[Key Deliverables:]
+
+- Ứng dụng mobile hoàn chỉnh.
+
+- Cơ sở dữ liệu học viên, giáo viên, lớp học.
+
+- Module quản lý điểm, lịch học, tài liệu.
+
+- Báo cáo và thống kê cho quản trị viên.
+
+#strong[High-level requirements:]
+
+- Ứng dụng mobile hoàn chỉnh.
+
+- Cơ sở dữ liệu học viên, giáo viên, lớp học.
+
+- Module quản lý điểm, lịch học, tài liệu.
+
+- Báo cáo và thống kê cho quản trị viên.
+
+#strong[Overall Project risk]
+
+- Rủi ro về hạ tầng công nghệ (server, bảo mật).
+
+- Người dùng chưa quen hệ thống mới.
+
+- Hạn chế ngân sách và thời gian triển khai.
+
+#figure(
+  align(center)[#table(
+    columns: (9.52%, 50.73%, 39.75%),
+    align: (auto,auto,auto,),
+    table.header(table.cell(align: center)[], table.cell(align: center)[#strong[Project objective];], table.cell(align: center)[#strong[Success criteria];],),
+    table.hline(),
+    [#strong[Scope];], [#figure(
+      align(center)[#table(
+        columns: (1.03%),
+        align: (auto,),
+        table.header([],),
+        table.hline(),
+      )]
+      , kind: table
+      )
+
+    #figure(
+      align(center)[#table(
+        columns: (53.76%),
+        align: (auto,),
+        table.header([Xây dựng ứng dụng quản lý lớp học trực tuyến với các chức năng: quản lý lớp, giáo viên, học viên, điểm, lịch học, tài liệu.],),
+        table.hline(),
+      )]
+      , kind: table
+      )
+
+    ], [Tất cả các module chính (quản lý lớp, học viên, giáo viên, lịch, báo cáo) hoạt động ổn định và được nghiệm thu.],
+    [#strong[Time];], [Hoàn thành dự án trong vòng #strong[4--6 tháng] từ khi khởi động.], [100% các mốc quan trọng (milestone) được hoàn thành đúng hoặc sớm hơn tiến độ đã cam kết.],
+    [#strong[Cost];], [Triển khai trong phạm vi ngân sách được phê duyệt.], [Tổng chi phí không vượt quá #strong[±10%] ngân sách đã dự toán ban đầu.],
+    [#strong[Other];], [Đảm bảo tính bảo mật, dễ sử dụng và hỗ trợ mở rộng trong tương lai.], [- Hệ thống bảo mật, không để lộ dữ liệu người dùng. \
+    \- Tối thiểu #strong[70% người dùng] (GV/HV/Admin) hài lòng khi sử dụng.],
+  )]
+  , kind: table
+  )
+
+#figure(
+  align(center)[#table(
+    columns: (50%, 50%),
+    align: (auto,auto,),
+    table.header(table.cell(align: center)[#strong[Summary Milestone];], table.cell(align: center)[#strong[Due Date];],),
+    table.hline(),
+    [Khởi động dự án], [2 tuần],
+    [Phân tích yêu cầu], [4 tuần],
+    [Thiết kế hệ thống], [8 tuần],
+    [Phát triển và kiểm thử], [8 tuần],
+    [Triển khai và đào tạo], [2 tuần],
+  )]
+  , kind: table
+  )
+
+#strong[Preapproved Financial resources:] 2 triệu đô la zimbabwe
+
+#figure(
+  align(center)[#table(
+    columns: (50%, 50%),
+    align: (auto,auto,),
+    table.header(table.cell(align: center)[#strong[Stakeholder(s)];], table.cell(align: center)[#strong[Role];],),
+    table.hline(),
+    [Giám đốc], [Sponsor],
+    [Admin], [Quản lý và giám sát lớp học],
+    [Giáo viên], [Người sử dụng chính, quản lý nội dung và học viên],
+    [Học viên], [Người dùng cuối],
+  )]
+  , kind: table
+  )
+
+#strong[Project exit criteria:]
+
+Hệ thống chạy ổn định, nghiệm thu thành công và được người dùng chấp nhận.
+
+#strong[Project manager authority level:]
+
+Toàn quyền trong việc điều phối nhóm dự án.
+
+#strong[Staffing Decisions:]
+
+Do Project Manager quyết định và điều phối.
+
+#strong[Budget management and Variance:]
+
+Theo dõi bởi Project Manager, báo cáo cho Sponsor.
+
+#strong[Technical Decisions:]
+
+Do nhóm kỹ thuật phụ trách, tham khảo ý kiến Project Manager.
+
+#strong[Conflict resolution:]
+
+Giải quyết nội bộ nhóm, nếu không thành công sẽ báo cáo Sponsor.
+
+#strong[Sponsor authority:]
+
+Phê duyệt thay đổi phạm vi, ngân sách, tiến độ.
+
+#strong[Approval:]
+
+#figure(
+  align(center)[#table(
+    columns: (24.99%, 24.99%, 25.01%, 25.01%),
+    align: (auto,auto,auto,auto,),
+    table.header([#strong[Role];], [#strong[Name];], [#strong[Signature];], [#strong[Date];],),
+    table.hline(),
+    [Project Manager], [Nguyễn Văn A -- Project Manager], [NVA], [02/10/2025],
+    [Sponsor/Originator], [Trần Thị B -- Giám đốc Trung tâm Ngoại ngữ ABC], [TTB], [03/10/2025],
+  )]
+  , kind: table
+  )
+
+#strong[Sử dụng AI:]
+
+Gõ file doc với các tiêu đề của từng mục cũng như vẽ sẵn các bảng chừa các ô dữ liệu. Sau đó, đưa file cho AI để nhờ ghi thử thông tin sau đó dựa vào để sửa. Các tên người dùng, tập đoàn được giữ lại. Trong khi đó, các thông tin về chức năng được sửa lại để phù hợp với hệ thống.
