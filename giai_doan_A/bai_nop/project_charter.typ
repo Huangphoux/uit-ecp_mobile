@@ -23,10 +23,30 @@ Tạo ra một hệ thống trực tuyến giúp trung tâm ngoại ngữ quản
 - Giáo viên có thể tạo bài giảng, điểm danh, chấm điểm, quản lý tài liệu
 - Quản trị viên có thể theo dõi tình trạng lớp học, báo cáo và thống kê
 
-=== Project Objectives and Success Criteria
+=== Project Boundaries
+- Không phát triển hệ thống thanh toán trực tuyến giai đoạn đầu.
+- Chỉ tập trung cho các khóa học ngoại ngữ, chưa tích hợp các ngành học khác.
+
+=== Key Deliverables
+- Ứng dụng mobile hoàn chỉnh.
+- Cơ sở dữ liệu học viên, giáo viên, lớp học.
+- Module quản lý điểm, lịch học, tài liệu.
+- Báo cáo và thống kê cho quản trị viên.
+=== High-level Requirements
+- Ứng dụng mobile hoàn chỉnh.
+- Cơ sở dữ liệu học viên, giáo viên, lớp học.
+- Module quản lý điểm, lịch học, tài liệu.
+- Báo cáo và thống kê cho quản trị viên.
+
+=== Overall Project Risk
+- Rủi ro về hạ tầng công nghệ (server, bảo mật).
+- Người dùng chưa quen hệ thống mới.
+- Hạn chế ngân sách và thời gian triển khai.
+
+
 #table(
   columns: 3,
-  [*Objective*], [*Description*], [*Success Criteria*],
+  [**], [*Objective*], [*Success Criteria*],
   [Scope], 
   [Xây dựng ứng dụng quản lý lớp học trực tuyến với các chức năng: quản lý lớp, giáo viên, học viên, điểm, lịch học, tài liệu],
   [Tất cả các module chính hoạt động ổn định và được nghiệm thu],
@@ -44,7 +64,6 @@ Tạo ra một hệ thống trực tuyến giúp trung tâm ngoại ngữ quản
   [- Hệ thống bảo mật, không để lộ dữ liệu\n- Tối thiểu 70% người dùng hài lòng],
 )
 
-=== Project Timeline
 #table(
   columns: 2,
   [*Summary Milestones*], [*Due Date*],
@@ -55,10 +74,9 @@ Tạo ra một hệ thống trực tuyến giúp trung tâm ngoại ngữ quản
   [Triển khai và đào tạo], [2 tuần],
 )
 
-=== Budget
-Preapproved Financial Resources: 2 triệu đô la Zimbabwe
+=== Preapproved Financial Resources
+200 triệu Việt Nam đồng
 
-=== Project Stakeholders
 #table(
   columns:2,
   [*Stakeholder*], [*Role*],
@@ -67,6 +85,30 @@ Preapproved Financial Resources: 2 triệu đô la Zimbabwe
   [Giáo viên], [Người sử dụng chính, quản lý nội dung và học viên],
   [Học viên], [Người dùng cuối],
 )
+
+=== Project Exit Criteria
+Hệ thống chạy ổn định, nghiệm thu thành công và được người dùng chấp nhận.
+
+=== Project Manager Authority Level
+Toàn quyền trong việc điều phối nhóm dự án.
+
+=== Project Exit Criteria
+Hệ thống chạy ổn định, nghiệm thu thành công và được người dùng chấp nhận.
+
+=== Staffing Decisions
+Do Project Manager quyết định và điều phối.
+
+=== Budget Management And Variance
+Theo dõi bởi Project Manager, báo cáo cho Sponsor.
+
+=== Technical Decisions
+Do nhóm kỹ thuật phụ trách, tham khảo ý kiến Project Manager.
+
+=== Conflict Resolution
+Giải quyết nội bộ nhóm, nếu không thành công sẽ báo cáo Sponsor.
+
+=== Sponsor Authority
+Phê duyệt thay đổi phạm vi, ngân sách, tiến độ.
 
 === Project Approval
 #table(
