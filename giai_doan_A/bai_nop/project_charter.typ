@@ -32,6 +32,7 @@ Tạo ra một hệ thống trực tuyến giúp trung tâm ngoại ngữ quản
 - Cơ sở dữ liệu học viên, giáo viên, lớp học.
 - Module quản lý điểm, lịch học, tài liệu.
 - Báo cáo và thống kê cho quản trị viên.
+
 === High-level Requirements
 - Ứng dụng mobile hoàn chỉnh.
 - Cơ sở dữ liệu học viên, giáo viên, lớp học.
@@ -43,6 +44,7 @@ Tạo ra một hệ thống trực tuyến giúp trung tâm ngoại ngữ quản
 - Người dùng chưa quen hệ thống mới.
 - Hạn chế ngân sách và thời gian triển khai.
 
+=== Project Objectives & Success Criterias
 
 #table(
   columns: 3,
@@ -63,6 +65,8 @@ Tạo ra một hệ thống trực tuyến giúp trung tâm ngoại ngữ quản
   [Đảm bảo tính bảo mật, dễ sử dụng và hỗ trợ mở rộng],
   [- Hệ thống bảo mật, không để lộ dữ liệu\n- Tối thiểu 70% người dùng hài lòng],
 )
+
+=== Summary Milestones & Due Dates
 
 #table(
   columns: 2,
