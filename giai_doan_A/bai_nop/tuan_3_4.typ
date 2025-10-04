@@ -1,3 +1,7 @@
-== WBS
+== WBS (Tùng)
 
-== Gantt Chart
+#include "wbs.typ"
+
+== Gantt Chart (Phúc)
+
+#include "gantt_chart.typ"

@@ -1,16 +1,7 @@
-// Using built-in table function with improved spacing for Lien he column
-
-#set page(width: 21cm, height: 29.7cm, margin: 1cm)
-
-#align(center)[
-  = Danh sách Stakeholders Dự án Ứng dụng Quản lý Lớp học Trực tuyến
-]
+#set page(width: 50cm)
 
 #table(
-  columns: (2fr, 3fr, 1.5fr, 2fr, 1.5fr, 4fr, 2.5fr, 4fr, 4fr),
-  fill: (x, y) => if y == 0 { aqua } else { white },
-  stroke: 0.8pt,
-  inset: 10pt,
+  columns: 9,
   [*Tên Stakeholder*],
   [*Vai trò*],
   [*Phân loại*],
@@ -121,11 +112,3 @@
   [Báo cáo tuân thủ định kỳ, đảm bảo minh bạch],
   [`gov@moet.gov.vn`]
 )
-
-#block[
-  *Prompt:* hãy vào vai PM hoặc BA trong quản lý dự án phát triển phần mềm, hãy giúp tôi tạo bảng gồm các stakeholders cho dự án Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ theo bảng có các cột sau: Stakeholder Name, Role, Category, Power/Influence, Interest, Expectation, Communication, Contact, Communication strategy (đây là ví dụ Melissa Brickstead Project Administrator Internal Strong Neutral Monthly report Email `melissa@company.com`)
-]
-
-#block[
-  *Phản hồi của GPT:* là bảng stakeholders ở trên nguyên mẫu không chỉnh sửa do em thấy đã đầy đủ và thể hiện rõ các bên liên quan của dự án
-]

@@ -26,7 +26,7 @@ Mục này bao gồm Project Charter và Stakeholder Register.
 
 = Phạm vi & Tiến độ
 
-Mục này bao gồm WBS và Gantt chart, kèm giải thích các mốc quan trọng và lý do sắp xếp thời gian.
+Mục này bao gồm WBS và Gantt Chart, kèm giải thích các mốc quan trọng và lý do sắp xếp thời gian.
 
 #include "tuan_3_4.typ"
 
