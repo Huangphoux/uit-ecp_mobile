@@ -48,7 +48,7 @@ Tạo ra một hệ thống trực tuyến giúp trung tâm ngoại ngữ quản
 
 #table(
   columns: 3,
-  [**], [*Objective*], [*Success Criteria*],
+  [], [*Objective*], [*Success Criteria*],
   [Scope], 
   [Xây dựng ứng dụng quản lý lớp học trực tuyến với các chức năng: quản lý lớp, giáo viên, học viên, điểm, lịch học, tài liệu],
   [Tất cả các module chính hoạt động ổn định và được nghiệm thu],

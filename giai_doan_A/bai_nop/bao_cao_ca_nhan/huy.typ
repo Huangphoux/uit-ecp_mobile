@@ -40,7 +40,7 @@ Dự án được triển khai trong khoảng 6 năm (giai đoạn khởi tạo 
 
 #table(
   columns: (auto, auto, 65%),
-  [**Giai đoạn**], [**Thời gian dự kiến**], [**Hoạt động chính**],
+  [*Giai đoạn*], [*Thời gian dự kiến*], [*Hoạt động chính*],
   [Khởi tạo / ý tưởng & tiền sản xuất], [2018 – đầu 2019], [Nghiên cứu IP, tuyển nhân sự ban đầu, xây dựng concept],
   [Tiền sản xuất & prototyping], [2019 – 2020], [Xây dựng prototype, thử nghiệm cơ chế gameplay, chọn engine],
   [Sản xuất nội dung lớn], [2020 – 2022], [Phát triển asset, level design, hệ thống gameplay, animation],
