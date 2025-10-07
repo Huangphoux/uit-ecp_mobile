@@ -1,0 +1,1 @@
+- Thực hiện theo `Communications Management Plan` trong `PMBOK forms`

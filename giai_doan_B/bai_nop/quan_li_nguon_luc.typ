@@ -1,0 +1,1 @@
+- Thực hiện theo mẫu `Responsibility Assignment Matrix` và `Resource Management Plan` trong `PMBOK forms`

@@ -1,0 +1,1 @@
+- Thực hiện theo mẫu `Quality Management Plan` trong `PMBOK forms`

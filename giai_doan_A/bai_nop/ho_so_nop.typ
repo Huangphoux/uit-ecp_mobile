@@ -2,7 +2,9 @@
 #import "@preview/basic-report:0.3.1": *
 
 #show: it => basic-report(
-  doc-category: "Quản lý dự án Phát triển Phần mềm - SE358.Q11",
+  doc-category: "Quản lý dự án Phát triển Phần mềm - SE358.Q11
+
+Đề tài 2: Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ.",
   doc-title: "Hồ sơ giai đoạn A",
   author: "23521224 Trương Hoàng Phúc
 23521736 Bùi Văn Tùng
