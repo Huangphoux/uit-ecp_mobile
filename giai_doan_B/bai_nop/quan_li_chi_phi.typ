@@ -1,1 +1,1 @@
-- Thực hiện theo mẫu `Cost Estimating Worksheet` trong `PMBOK forms`
+- Thực hiện theo mẫu `Cost Estimating Worksheet` và `Cost Management Plan` trong `PMBOK forms`

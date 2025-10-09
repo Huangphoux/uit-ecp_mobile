@@ -1,7 +1,9 @@
-== Mục tiêu
+#set heading(offset: 1)
 
-== Phạm vi
+= Mục tiêu
 
-== Quy trình
+= Phạm vi
 
-== Phân vai
+= Quy trình
+
+= Phân vai
