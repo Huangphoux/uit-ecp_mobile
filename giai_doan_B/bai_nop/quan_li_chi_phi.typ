@@ -1,4 +1,4 @@
-=== *Cost Estimating Worksheet*
+=== Cost Estimating Worksheet
 
 ==== Project Title:
 Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ
@@ -75,7 +75,7 @@
 - Bảo trì & Hỗ trợ sau triển khai: ước tính chi phí vận hành 12 tháng đầu (support & hosting) được đưa vào budget baseline.
 - Ghi chú về báo cáo: PM chịu trách nhiệm cập nhật baseline chi phí sau mỗi giai đoạn estimate (Prelim -> Detailed).
 
-=== *Cost Estimating Worksheet*
+=== Cost Estimating Worksheet
 
 
 ==== Project Title: 
@@ -311,7 +311,7 @@
   [11,533,333 đ], 
 )
 
-=== *Bottom-Up Cost Estimating Worksheet*
+=== Bottom-Up Cost Estimating Worksheet
 
 
 ==== Project Title:
