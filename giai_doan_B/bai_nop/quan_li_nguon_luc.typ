@@ -194,25 +194,25 @@ Date Prepared: #today.display("[day]/[month]/[year]")
 
 = Project Organizational Chart
 
-- **Project Sponsor**: Nguyễn Văn An
+- *Project Sponsor*: Nguyễn Văn An
   - The highest authority in the project, responsible for approving major changes and ensuring that the project stays aligned with business goals and budget.
 
-- **Project Manager**: Lê Thị Hương
+- *Project Manager*: Lê Thị Hương
   - Oversees the day-to-day execution of the project, managing scope, schedule, and resources. Reports to the Project Sponsor.
 
-- **Business Analyst**: Phạm Minh Tuấn
+- *Business Analyst*: Phạm Minh Tuấn
   - Responsible for gathering and analyzing requirements, acting as a bridge between the users (teachers and students) and the technical team.
 
-- **Technical Lead**: Trần Thảo Nhi
+- *Technical Lead*: Trần Thảo Nhi
   - Leads the technical team, ensuring that the system architecture and coding standards are followed.
 
-- **Quality Assurance Engineers (QA)**: 
+- *Quality Assurance Engineers (QA)*: 
   - Ensure that the product meets the required standards and works efficiently. They run tests to identify bugs and ensure quality at each stage of development.
 
-- **Frontend Developers**:
+- *Frontend Developers*:
   - Responsible for the development of the front-end (user interface) of the system.
 
-- **Backend Developers**:
+- *Backend Developers*:
   - Responsible for the development of the back-end (server, database) components of the system.
 
 
