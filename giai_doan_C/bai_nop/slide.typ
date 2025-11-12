@@ -1,7 +1,7 @@
 ﻿#import "@preview/diatypst:0.8.0": *
 
 #show: slides.with(
-  title: "Ứng dụng Quản lý Lớp học Trực tuyến", // Required
+  title: "ECP-Mobile", 
   subtitle: "SE358.Q11 - Quản lý Dự án Phần mềm",
   date: datetime.today().display(),
   authors: "Nhóm 2",
