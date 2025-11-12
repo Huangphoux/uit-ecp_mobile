@@ -20,23 +20,25 @@
 #set par(leading: 0.55em, spacing: 0.55em, first-line-indent: 1.8em, justify: true)
 #show heading: set block(above: 1.4em, below: 1em)
 
-= Sprint Backlog
+= Sprint Backlog (Bùi Văn Tùng)
 #include "sprint_backlog.typ"
 
-= Biên bản Daily Scum 1
+= Biên bản Daily Scum 1 (Tạ Hoàng Hiệp)
 #include "scrum1.typ"
 
-= Biên bản Daily Scum 2
+= Biên bản Daily Scum 2 (Tạ Hoàng Hiệp)
 #include "scrum2.typ"
 
-= Sprint Retrospective
+= Sprint Retrospective (Trương Hoàng Phúc)
 #include "sprint_retrospective.typ"
 
-= So sánh Agile vs. Waterfall
+= So sánh Agile vs. Waterfall (Vũ Quốc Huy)
 #include "so_sanh.typ"
 
-= Báo cáo cuối kì
+= Báo cáo cuối kì (Đỗ Đình Khang)
 #include "bao_cao.typ"
+
+// Slide: Đỗ Đình Khang
 
 = Retrospective C
 #include "retrospective.typ"
