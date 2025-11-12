@@ -1,12 +1,16 @@
-=== Cost Estimating Worksheet
+#set heading(offset: 2)
+#set page(width: auto)
 
-==== Project Title:
+
+= Cost Estimating Worksheet
+
+== Project Title:
 Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ
 
-==== Date Prepared:
+== Date Prepared:
 09/10/2025
 
-==== Units of Measure:
+== Units of Measure:
 - Tiền tệ: VND (đ)
 - Lao động: giờ công (person-hours) và FTE (full-time equivalent)
 - Phần mềm/giấy phép: số license
@@ -14,24 +18,24 @@
 - Người dùng: số học viên, số giáo viên
 - Thời gian: ngày / tuần / tháng
 
-==== Level of Precision:
+== Level of Precision:
 - Dòng mục chi tiết (line-item): làm tròn đến 100.000 đ.
 - Lao động: làm tròn đến 1 giờ.
 - Tổng chi phí hạng mục: làm tròn đến 1.000.000 đ.
 - Báo cáo tóm tắt: làm tròn đến 10.000.000 đ khi trình bày cho sponsor.
 
-==== Level of Accuracy:
+== Level of Accuracy:
 - Giai đoạn ý tưởng / Sơ bộ (Concept/Preliminary): ±20% (ước lượng sơ khởi, dùng để phê duyệt ngân sách ban đầu).
 - Giai đoạn thiết kế chi tiết (Design/Definitive): ±10% (sau phân tích yêu cầu và thiết kế kiến trúc).
 - Giai đoạn hoàn thiện trước triển khai (Final): ±5% (khi có báo giá nhà cung cấp và ước tính lao động chi tiết).
 
-==== Organizational Procedure Links:
+== Organizational Procedure Links:
 - Quy trình phê duyệt dự án: QC-Project-001 (Quy trình phê duyệt ngân sách và scope).
 - Quy trình mua sắm / Procurement: Procurement-Guide-01 (hướng dẫn RFQ, PO, hợp đồng nhà cung cấp).
 - Quy trình quản lý thay đổi: Change-Request-Process (mẫu change request & phê duyệt).
 - Chính sách kế toán/ghi nhận chi phí: Finance-Policy-2024.
 
-==== Control Thresholds:
+== Control Thresholds:
 - Biến động chi phí so với baseline:
   - ≤ 5%: PM có thể tự điều chỉnh và tiếp tục.
   - > 5% và ≤ 10%: PM phải thông báo Sponsor và xin phép điều chỉnh ngân sách (formally documented).
@@ -39,14 +43,14 @@
 - Mốc tiến độ (milestones) trễ quá 5 ngày cần báo cáo và đánh giá ảnh hưởng chi phí.
 - Mọi thay đổi scope có ảnh hưởng chi phí > 3% phải thông qua quy trình thay đổi.
 
-==== Rules of Performance Measurement:
+== Rules of Performance Measurement:
 - Áp dụng Earned Value Management (EVM): theo dõi BCWS (PV), BCWP (EV), ACWP (AC). Tính CPI = EV / AC và SPI = EV / PV.
 - Phần trăm hoàn thành công việc được đo bằng: nhiệm vụ/issue hoàn tất trên hệ quản lý (task-based) hoặc story-points cho agile.
 - Đo lường năng suất lao động: giờ thực tế / giờ dự toán cho từng task.
 - Kiểm tra tiến độ theo milestone: phân tích variance (schedule & cost) hàng tuần và báo cáo tổng hợp hàng tháng.
 - Tất cả chi phí phát sinh phải có chứng từ hợp lệ (PO, invoice, biên bản nghiệm thu).
 
-==== Cost Reporting and Format:
+== Cost Reporting and Format:
 - Tần suất: Báo cáo chi phí hàng tháng + báo cáo ad-hoc khi có biến động lớn.
 - Mẫu file: Excel workbook: Cost-Report-(YYYYMM).xlsx với sheet: Summary, Detail by WBS, Vendor Quotes, Forecast (EAC/ETC).
 - Các trường bắt buộc trong báo cáo summary:
@@ -62,7 +66,7 @@
 - Người nhận: PM (owner), Sponsor, Kế toán/Finance, Team Lead kỹ thuật.
 - Định dạng xuất báo cáo: PDF cho Sponsor; Excel cho Finance và PM để phân tích chi tiết.
 
-==== Additional Details:
+== Additional Details:
 - Tiền dự phòng (contingency): đặt mức 10% của tổng direct cost cho rủi ro kỹ thuật và thay đổi nhỏ.
 - Giả định chính:
   - Yêu cầu chức năng cơ bản được cố định sau giai đoạn phân tích 2 tuần.
@@ -75,17 +79,17 @@
 - Bảo trì & Hỗ trợ sau triển khai: ước tính chi phí vận hành 12 tháng đầu (support & hosting) được đưa vào budget baseline.
 - Ghi chú về báo cáo: PM chịu trách nhiệm cập nhật baseline chi phí sau mỗi giai đoạn estimate (Prelim -> Detailed).
 
-=== Cost Estimating Worksheet
+= Cost Estimating Worksheet
 
 
-==== Project Title: 
+== Project Title: 
 Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ
 
 
-==== Date Prepared:
+== Date Prepared:
 09/10/2025
 
-==== Parametric Estimates:
+== Parametric Estimates:
 
 #table(
   columns: 5,
@@ -168,7 +172,7 @@
   [196,130,000 đ],
 )
 
-==== Analogous Estimates:
+== Analogous Estimates:
 
 #table(
   columns: 6,
@@ -236,7 +240,7 @@
   [42.000.000 đ],
 )
 
-==== Three-Point Estimates:
+== Three-Point Estimates:
 
 #table(
   columns: 6,
@@ -311,22 +315,19 @@
   [11,533,333 đ], 
 )
 
-=== Bottom-Up Cost Estimating Worksheet
+= Bottom-Up Cost Estimating Worksheet
 
 
-==== Project Title:
+== Project Title:
 Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ
 
 
-==== Date Prepared:
+== Date Prepared:
 09/10/2025
 
-#pagebreak()
-#set page(flipped: true)
 
 #table(
-  columns: (0.8cm, 1.5cm, 2.8cm, 3cm, 2.5cm, 2.5cm, 2cm, 2.5cm, 1.5cm, 2.5cm, 2.5cm, 2.5cm),
-  align: (center + horizon, center + horizon, center + horizon, center + horizon, center + horizon, center + horizon, center + horizon, center + horizon, center + horizon, center + horizon, center + horizon, center + horizon),
+  columns: 12,
   inset: 8pt,
   [*ID*],
   [*Labor Hours*],
@@ -462,7 +463,7 @@
 
 #set page(flipped: false)
 
-=== AI Usage Note
+= AI Usage Note
 - Gõ file typescript với các tiêu đề của từng mục cũng như vẽ sẵn các bảng chừa sẵn các ô dữ liệu. Sau đó, đưa file cho AI để nhờ ghi thử thông tin sau đó dựa vào để sửa
 - Những thành phần do AI cung cấp được thiết kế làm khung sẵn và nhiều con số là ước tính tham khảo, cập nhật các tham số (rates, giờ,...) trước khi đưa vào báo cáo
 - Phần văn bản mô tả, cấu trúc bảng, và logic quản lý được giữ lại vì phù hợp với chuẩn quản lý dự án, các giá trị số được chỉnh để phản ánh bối cảnh dự án và dễ đọc

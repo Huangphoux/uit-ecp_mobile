@@ -1,20 +1,18 @@
-#set page(header: none, footer: none, margin: 1.5cm)
-=== *QUALITY MANAGEMENT PLAN*
+#set heading(offset: 2)
 
-#v(10pt)
 
-=== Thông tin dự án
-**Project Title:** Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ \
-**Date Prepared:** 11/10/2025
+= Thông tin dự án
+*Project Title*: Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ \
+*Date Prepared*: 11/10/2025
 
-=== Quality Standards
-- Tuân thủ tiêu chuẩn ISO/IEC 25010 về chất lượng phần mềm.  
-- Đảm bảo độ chính xác dữ liệu tối thiểu 99%.  
-- Giao diện người dùng thân thiện, nhất quán và hỗ trợ đa thiết bị (responsive).  
-- Tốc độ tải trang < 2 giây cho các thao tác chính.  
-- Mức độ hài lòng người dùng (qua khảo sát) ≥ 90%.  
+= Quality Standards
+- Tuân thủ tiêu chuẩn ISO/IEC 25010 về chất lượng phần mềm.
+- Đảm bảo độ chính xác dữ liệu tối thiểu 99%.
+- Giao diện người dùng thân thiện, nhất quán và hỗ trợ đa thiết bị (responsive).
+- Tốc độ tải trang < 2 giây cho các thao tác chính.
+- Mức độ hài lòng người dùng (qua khảo sát) ≥ 90%.
 
-=== Quality Objectives
+= Quality Objectives
 #table(
   columns: 2,
   [*Metric or Specification*], [*Measure*],
@@ -24,7 +22,7 @@
   [Trải nghiệm người dùng], [≥ 90% người dùng đánh giá “Tốt” trở lên],
 )
 
-=== Quality Roles and Responsibilities
+= Quality Roles and Responsibilities
 #table(
   columns: 2,
   [*Roles*], [*Responsibilities*],
@@ -35,7 +33,7 @@
 
 #pagebreak()
 
-=== Deliverables and Processes Subject to Quality Review
+= Deliverables and Processes Subject to Quality Review
 #table(
   columns: 2,
   [*Deliverables*], [*Processes*],
@@ -45,24 +43,24 @@
   [Báo cáo học viên & giảng viên], [Kiểm thử dữ liệu và hiệu năng],
 )
 
-=== Quality Management Approach
-- Sử dụng mô hình kiểm thử theo giai đoạn (unit → integration → UAT).  
-- Áp dụng công cụ tự động kiểm thử giao diện (Selenium) và API (Postman).  
-- Báo cáo chất lượng được cập nhật mỗi sprint.  
+= Quality Management Approach
+- Sử dụng mô hình kiểm thử theo giai đoạn (unit → integration → UAT).
+- Áp dụng công cụ tự động kiểm thử giao diện (Selenium) và API (Postman).
+- Báo cáo chất lượng được cập nhật mỗi sprint.
 - Các vấn đề phát hiện được ghi nhận và xử lý trong hệ thống quản lý lỗi (Jira).
 
-=== Quality Control Approach
-- Mỗi chức năng sẽ có tiêu chí chấp nhận rõ ràng.  
-- Thực hiện kiểm thử hồi quy sau mỗi lần cập nhật.  
-- Áp dụng checklist review cho tài liệu và mã nguồn.  
+= Quality Control Approach
+- Mỗi chức năng sẽ có tiêu chí chấp nhận rõ ràng.
+- Thực hiện kiểm thử hồi quy sau mỗi lần cập nhật.
+- Áp dụng checklist review cho tài liệu và mã nguồn.
 - Đánh giá định kỳ hàng tháng giữa PM, QA, và đại diện người dùng.
 
-=== Applicable Quality Procedures
-- Tuân thủ quy trình phát triển phần mềm Agile (Scrum).  
-- Áp dụng code review bắt buộc ≥ 2 người duyệt.  
-- Lưu trữ tài liệu và báo cáo kiểm thử trên SharePoint nội bộ.  
+= Applicable Quality Procedures
+- Tuân thủ quy trình phát triển phần mềm Agile (Scrum).
+- Áp dụng code review bắt buộc ≥ 2 người duyệt.
+- Lưu trữ tài liệu và báo cáo kiểm thử trên SharePoint nội bộ.
 - Báo cáo kết quả chất lượng được lưu trong repository “project-docs”.
 
-=== AI Usage Note
+= AI Usage Note
 - Prompt: Hãy vào vai PM hoặc BA và giúp tôi điền vào form quản lý chất lượng theo dự án của tôi
 - Tất cả nội dung đã được giữ nguyên so với bản gốc của GPT.

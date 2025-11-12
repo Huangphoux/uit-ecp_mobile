@@ -1,6 +1,4 @@
-- Thực hiện theo mẫu `Responsibility Assignment Matrix` và `Resource Management Plan` trong `PMBOK forms`
-
-#set heading(offset: 1)
+#set heading(offset: 2)
 
 
 = Responsibility Assignment Matrix
@@ -147,6 +145,8 @@ Date Prepared: #today.display("[day]/[month]/[year]")
 
 == Kết quả
 
+#set heading(offset: 4)
+
 #let today = datetime.today()
 
 Project Title: Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ
@@ -194,16 +194,16 @@ Date Prepared: #today.display("[day]/[month]/[year]")
 
 = Project Organizational Chart
 
-- *Project Sponsor*: Nguyễn Văn An
+- *Project Sponsor*: 
   - The highest authority in the project, responsible for approving major changes and ensuring that the project stays aligned with business goals and budget.
 
-- *Project Manager*: Lê Thị Hương
+- *Project Manager*:
   - Oversees the day-to-day execution of the project, managing scope, schedule, and resources. Reports to the Project Sponsor.
 
-- *Business Analyst*: Phạm Minh Tuấn
+- *Business Analyst*:
   - Responsible for gathering and analyzing requirements, acting as a bridge between the users (teachers and students) and the technical team.
 
-- *Technical Lead*: Trần Thảo Nhi
+- *Technical Lead*: 
   - Leads the technical team, ensuring that the system architecture and coding standards are followed.
 
 - *Quality Assurance Engineers (QA)*: 

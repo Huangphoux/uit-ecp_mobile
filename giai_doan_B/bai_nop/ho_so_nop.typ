@@ -24,35 +24,35 @@
 
 = Kế hoạch Hỗ trợ
 
-== Budget
+== Budget (Đỗ Đình Khang)
 Bảng ước lượng chi phí chi tiết, có hạng mục dự phòng.
 
 #include "quan_li_chi_phi.typ"
 
-== Quality Plan
+== Quality Plan (Vũ Quốc Huy)
 
 Tiêu chuẩn chất lượng, kế hoạch kiểm thử, checklist.
 
 #include "quan_li_chat_luong.typ"
 
-== Resource Plan
+== Resource Plan (Trương Hoàng Phúc)
 
 Danh sách nhân sự, mô tả vai trò, ma trận RACI đơn giản.
 
 #include "quan_li_nguon_luc.typ"
 
-== Communication Plan
+== Communication Plan (Tạ Hoàng Hiệp)
 
 Bảng xác định thông tin, tần suất, kênh truyền thông, người chịu trách nhiệm.
 
 #include "quan_li_truyen_thong.typ"
 
-= Risk Register
+== Risk Register (Bùi Văn Tùng)
 Bản hoàn chỉnh sau khi cập nhật tình huống bất ngờ (liệt kê rủi ro, đánh giá xác suất & ảnh hưởng, kế hoạch ứng phó)
 
 #include "quan_li_rui_ro.typ"
 
-= Biên bản họp Kick-off
+== Biên bản họp Kick-off (Tạ Hoàng Hiệp)
 
 Ghi lại nội dung họp (mục tiêu, phân công, câu hỏi của stakeholders).
 

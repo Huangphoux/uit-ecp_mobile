@@ -1,8 +1,8 @@
-#set heading(offset: 1)
+#set heading(offset: 2)
 
 = Biên bản họp KICKOFF Dự án
 Ngày họp: 05/10/2025  
-Thời gian: 09:00 – 11:00  
+Thời gian: 09:00 - 11:00  
 Địa điểm: Phòng họp trung tâm / Online  
 Chủ trì: Trương Hoàng Phúc  
 Thư ký: Bùi Văn Tùng  
@@ -22,14 +22,14 @@ Thành viên tham dự:
 
 = Phạm vi
 
-*Phạm vi bao gồm:*
+*Phạm vi bao gồm*:
 - Xây dựng ứng dụng quản lý lớp học trực tuyến (mobile).  
 - Các tính năng chính: quản lý lớp, giáo viên, học viên, lịch học, điểm, tài liệu, báo cáo.  
 - Hỗ trợ học viên đăng ký lớp, theo dõi lịch và học trực tuyến.  
 - Giáo viên tạo bài giảng, điểm danh, chấm điểm, quản lý tài liệu.  
 - Quản trị viên theo dõi báo cáo, thống kê và dữ liệu hệ thống.
 
-*Phạm vi không bao gồm:*
+*Phạm vi không bao gồm*:
 - Tích hợp thanh toán trực tuyến trong giai đoạn đầu.  
 - Mở rộng sang các chương trình không thuộc lĩnh vực ngoại ngữ.
 
@@ -67,17 +67,17 @@ Thành viên tham dự:
 
 = Câu hỏi được nêu trong cuộc họp
 
-- **Vũ Quốc Huy:** Ứng dụng có cần hỗ trợ học trực tuyến qua video ngay giai đoạn đầu không?  
-  → **Kết luận:** Chỉ tích hợp module học trực tuyến cơ bản, chưa phát triển truyền hình trực tiếp nâng cao.
+- *Vũ Quốc Huy*: Ứng dụng có cần hỗ trợ học trực tuyến qua video ngay giai đoạn đầu không?  
+  → *Kết luận*: Chỉ tích hợp module học trực tuyến cơ bản, chưa phát triển truyền hình trực tiếp nâng cao.
 
-- **Tạ Hoàng Hiệp:** Hệ thống có yêu cầu đồng bộ dữ liệu với nền tảng cũ không?  
-  → **Kết luận:** Có, sẽ thực hiện import dữ liệu (học viên – giáo viên – lớp học) trong giai đoạn phân tích.
+- *Tạ Hoàng Hiệp*: Hệ thống có yêu cầu đồng bộ dữ liệu với nền tảng cũ không?  
+  → *Kết luận*: Có, sẽ thực hiện import dữ liệu (học viên – giáo viên – lớp học) trong giai đoạn phân tích.
 
-- **Đỗ Đình Khang:** Có quy định tiêu chí kiểm thử và thời điểm bắt đầu test không?  
-  → **Kết luận:** Bắt đầu test từ Sprint 2; không chấp nhận lỗi blocker và hạn chế lỗi major trong bản nghiệm thu.
+- *Đỗ Đình Khang*: Có quy định tiêu chí kiểm thử và thời điểm bắt đầu test không?  
+  → *Kết luận*: Bắt đầu test từ Sprint 2; không chấp nhận lỗi blocker và hạn chế lỗi major trong bản nghiệm thu.
 
-- **Bùi Văn Tùng:** Phương pháp lưu trữ tài liệu dự án cố định trên nền tảng nào?  
-  → **Kết luận:** Sử dụng Google Drive + Jira để quản lý tài liệu và tiến độ.
+- *Bùi Văn Tùng*: Phương pháp lưu trữ tài liệu dự án cố định trên nền tảng nào?  
+  → *Kết luận*: Sử dụng Google Drive + Jira để quản lý tài liệu và tiến độ.
 
 = Kết luận
 
