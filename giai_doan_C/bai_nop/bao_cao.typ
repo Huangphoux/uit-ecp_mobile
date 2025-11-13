@@ -1,4 +1,6 @@
-﻿#set page(
+﻿// Xài basic report, tham khảo `ho_so_nop.typ`
+
+#set page(
   paper: "a4",
   margin: (x: 2.5cm, y: 3cm),
   numbering: "1",
