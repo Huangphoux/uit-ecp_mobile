@@ -1,14 +1,14 @@
 ﻿#import "@preview/diatypst:0.8.0": *
 
 #show: slides.with(
-  title: "ECP-Mobile", 
+  title: "ECP-Mobile",
   subtitle: "SE358.Q11 - Quản lý Dự án Phần mềm",
   date: datetime.today().display(),
   authors: "Nhóm 2",
-
-  ratio: 16 / 9,
-  layout: "medium",
-  title-color: navy,
+  
+  ratio: 4 / 3, // giữ cái này tại mắt yếu
+  layout: "small", // giữ cái này tại mắt yếu
+  title-color: fuchsia,
   toc: true,
   theme: "full",
   count: "number",
@@ -17,6 +17,8 @@
 = Giới thiệu dự án
 
 == Bối cảnh
+
+// Chuyển thành bullet point
 
 #grid(
   columns: 2,
@@ -39,6 +41,8 @@
 
 == Mục tiêu dự án
 
+// Sao tiếng Anh
+
 #table(
   columns: 3,
   stroke: 0.5pt,
@@ -50,6 +54,9 @@
 )
 
 == Các chức năng chính
+
+// Chuyển thành bullet point
+
 
 #grid(
   columns: 3,
@@ -107,6 +114,8 @@
 
 == Cấu trúc phân rã công việc
 
+// Chuyển thành bullet point
+
 #grid(
   columns: 2,
   gutter: 2em,
@@ -136,6 +145,9 @@
 
 == Quản lý Rủi ro
 
+// Sao tiếng Anh
+
+
 #table(
   columns: 2,
   stroke: 0.5pt,
@@ -149,6 +161,9 @@
 == Ước lượng Chi phí
 
 *Phương pháp sử dụng:*
+
+// Chuyển thành bullet point
+
 
 #grid(
   columns: 3,
@@ -196,6 +211,8 @@
 )
 
 == Đề xuất: Phương pháp kết hợp
+
+
 
 #grid(
   columns: 3,
@@ -245,6 +262,7 @@
 
 *Thời gian:* 2 tuần (14 ngày)
 
+// Để tên ai vậy
 *Nhóm:* 4 người (Minh, Lan, Hùng, Thảo)
 
 *Cam kết:* 40 điểm công việc
@@ -271,6 +289,8 @@
 
 == Các buổi họp giai đoạn
 
+// giờ → tiếng
+
 #grid(
   columns: 2,
   gutter: 2em,
@@ -296,6 +316,8 @@
 )
 
 == Đánh giá & Nhìn lại giai đoạn
+
+// giờ → tiếng
 
 *Đánh giá giai đoạn (1.5 giờ):*
 - Trình diễn thành công 3/3 tính năng
@@ -345,6 +367,8 @@
 
 == Quản lý Dự án
 
+// bullet point
+
 #grid(
   columns: 2,
   gutter: 2em,
@@ -373,6 +397,9 @@
 )
 
 == Phát triển Phần mềm
+
+// bullet point
+
 
 #grid(
   columns: 2,
