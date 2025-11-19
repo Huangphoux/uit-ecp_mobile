@@ -10,15 +10,18 @@
 
 = Làm gì hôm qua?
 
-- Các thành viên đã hoàn thành phần đặc tả yêu cầu và thiết kế sơ bộ.
-- **Khang / Hiệp (SMs):** UI/UX đã phác thảo xong một số màn hình chính.
-- **Huy / Tùng (Dev):** Backend đang trong giai đoạn tạo cấu trúc project và API mẫu.
+- **Phúc (PO):** Duyệt acceptance criteria cho user story quản lý bài tập; xác nhận giới hạn upload **10MB**.
+- **Khang & Hiệp (SM):** Gỡ blockers, theo dõi tiến độ, điều phối code review.
+- **Huy (Dev):** Hoàn tất API chấm điểm (draft), thêm validation upload, viết unit test.
+- **Tùng (Dev):** Hoàn thành API xem bài nộp, tích hợp frontend, test upload.
 
 = Bữa này gì làm?
 
-- **Khang / Hiệp (SMs):** Hoàn thiện màn hình đăng nhập, đăng ký, dashboard học viên.
-- **Huy / Tùng (Dev):** Hoàn chỉnh API quản lý lớp học và người dùng.
-- **Phúc (PO):** Tiếp tục hoàn thiện wireframe cho module bài tập & tài liệu.
+- **Phúc:** Chuẩn bị test case & UAT checklist.
+- **Khang:** Kiểm tra CI pipeline, đảm bảo code review.
+- **Hiệp:** Theo dõi DevOps để cấu hình Firebase notification.
+- **Huy:** Hoàn thiện chấm điểm (bulk grading), unit test, deploy staging.
+- **Tùng:** Triển khai notification UI, test upload nhiều định dạng.
 
 = Mắc gì vướng cái?
 
@@ -31,6 +34,8 @@
 = Tắt bản biên tóm
 
 **Action items:**
-1. **Phúc (PO):** Thống nhất phạm vi giai đoạn 1 của dự án
-2. **Khang / Hiệp (SMs):** Tập trung hoàn thiện tài liệu yêu cầu (SRS) trong tuần tới
-3. **Huy / Tùng (Dev):** Chuẩn bị bản demo giao diện sơ bộ cho buổi họp tiếp theo
+- **Hiệp:** Hoàn tất follow-up Firebase trong ngày.
+- **Khang:** Xác nhận CI/CD & quyền truy cập staging.
+- **Phúc:** Chuẩn bị UAT checklist.
+- **Huy & Tùng:** Hoàn tất feature chấm điểm + notification trên staging hôm nay.
+- **Team:** Ghi nhận feedback bulk grading cho Sprint 4.
