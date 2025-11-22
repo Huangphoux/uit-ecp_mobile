@@ -18,68 +18,46 @@
 
 == Bối cảnh
 
-// Chuyển thành bullet point
+- Thách thức hiện tại:
+  - Quản lý truyền thống bằng sổ sách, Excel
+  - Dễ xảy ra sai sót
+  - Khó đồng bộ thông tin
+  - Tốn thời gian và nhân lực
 
-#grid(
-  columns: 2,
-  gutter: 2em,
-  [
-    *Thách thức hiện tại:*
-    - Quản lý truyền thống bằng sổ sách, Excel
-    - Dễ xảy ra sai sót
-    - Khó đồng bộ thông tin
-    - Tốn thời gian và nhân lực
-  ],
-  [
-    *Giải pháp:*
-    - Số hóa toàn bộ quy trình
-    - Hệ thống tập trung
-    - Tự động hóa quản lý
-    - Môi trường học tập linh hoạt
-  ]
-)
+- Giải pháp:
+  - Số hóa toàn bộ quy trình
+  - Hệ thống tập trung
+  - Tự động hóa quản lý
+  - Môi trường học tập linh hoạt
 
 == Mục tiêu dự án
-
-// Sao tiếng Anh
 
 #table(
   columns: 3,
   stroke: 0.5pt,
   [*Tiêu chí*], [*Mục tiêu*], [*KPI*],
-  [*Scope*], [App mobile quản lý toàn diện], [Tất cả module nghiệm thu],
-  [*Time*], [Hoàn thành trong 4-6 tháng], [100% milestone đúng hạn],
-  [*Cost*], [Ngân sách 200 triệu VNĐ], [±10% variance],
-  [*Quality*], [Bảo mật cao, dễ dùng], [≥70% hài lòng],
+  [*Phạm vi*], [Ứng dụng di động quản lý toàn diện], [Tất cả module nghiệm thu],
+  [*Thời gian*], [Hoàn thành trong 4-6 tháng], [100% cột mốc đúng hạn],
+  [*Chi phí*], [Ngân sách 200 triệu VNĐ], [±10% chênh lệch],
+  [*Chất lượng*], [Bảo mật cao, dễ dùng], [≥70% hài lòng],
 )
 
 == Các chức năng chính
 
-// Chuyển thành bullet point
+- Quản trị viên:
+  - Quản lý GV & HV
+  - Tạo lớp, xếp lịch
+  - Báo cáo thống kê
 
+- Giảng viên:
+  - Quản lý lớp học
+  - Tạo bài giảng
+  - Điểm danh, chấm điểm
 
-#grid(
-  columns: 3,
-  gutter: 1.5em,
-  [
-    *Quản trị viên*
-    - Quản lý GV & HV
-    - Tạo lớp, xếp lịch
-    - Báo cáo thống kê
-  ],
-  [
-    *Giảng viên*
-    - Quản lý lớp học
-    - Tạo bài giảng
-    - Điểm danh, chấm điểm
-  ],
-  [
-    *Học viên*
-    - Đăng ký lớp
-    - Xem tài liệu
-    - Nộp bài, xem điểm
-  ]
-)
+- Học viên:
+  - Đăng ký lớp
+  - Xem tài liệu
+  - Nộp bài, xem điểm
 
 == Các bên liên quan
 
@@ -114,85 +92,58 @@
 
 == Cấu trúc phân rã công việc
 
-// Chuyển thành bullet point
+- Giai đoạn 1: Phân tích (4 tuần)
+  - Thu thập yêu cầu
+  - Nghiên cứu hệ thống tương tự
+  - Xây dựng tài liệu yêu cầu
 
-#grid(
-  columns: 2,
-  gutter: 2em,
-  [
-    *Giai đoạn 1: Phân tích (4 tuần)*
-    - Thu thập yêu cầu
-    - Nghiên cứu hệ thống tương tự
-    - Xây dựng tài liệu yêu cầu
+- Giai đoạn 2: Thiết kế (8 tuần)
+  - Thiết kế giao diện người dùng
+  - Thiết kế cơ sở dữ liệu và API
+  - Thiết kế bảo mật
 
-    *Giai đoạn 2: Thiết kế (8 tuần)*
-    - Thiết kế giao diện người dùng
-    - Thiết kế cơ sở dữ liệu và API
-    - Thiết kế bảo mật
-  ],
-  [
-    *Giai đoạn 3: Phát triển (8 tuần)*
-    - Phát triển giao diện
-    - Phát triển backend
-    - Kiểm thử toàn diện
+- Giai đoạn 3: Phát triển (8 tuần)
+  - Phát triển giao diện
+  - Phát triển backend
+  - Kiểm thử toàn diện
 
-    *Giai đoạn 4: Triển khai (2 tuần)*
-    - Viết báo cáo
-    - Đào tạo người dùng
-    - Thuyết trình
-  ]
-)
+- Giai đoạn 4: Triển khai (2 tuần)
+  - Viết báo cáo
+  - Đào tạo người dùng
+  - Thuyết trình
 
 == Quản lý Rủi ro
-
-// Sao tiếng Anh
-
 
 #table(
   columns: 2,
   stroke: 0.5pt,
   [*Rủi ro*], [*Giải pháp*],
-  [*Scope Creep*], [Change Request Process, đánh giá impact],
-  [*Hiểu sai yêu cầu*], [Thảo luận thường xuyên, prototype],
-  [*Thay đổi giữa chừng*], [Agile approach, flexibility],
-  [*Công nghệ*], [Choose stable tech stack],
+  [*Mở rộng phạm vi*], [Quy trình yêu cầu thay đổi, đánh giá tác động],
+  [*Hiểu sai yêu cầu*], [Thảo luận thường xuyên, mẫu thử],
+  [*Thay đổi giữa chừng*], [Phương pháp linh hoạt, dễ điều chỉnh],
+  [*Công nghệ*], [Chọn công nghệ ổn định],
 )
 
 == Ước lượng Chi phí
 
-*Phương pháp sử dụng:*
+- Phương pháp tham số:
+  - Phát triển thêm: 60 triệu
+  - Kiểm thử thêm: 22.5 triệu
+  - Đám mây: 18 triệu
+  - Bản quyền: 15 triệu
+  - Kiểm toán: 20 triệu
 
-// Chuyển thành bullet point
+- Phương pháp tương tự:
+  - Hệ thống học (2019): 210 triệu
+  - Website (2020): 100 triệu
+  - Ứng dụng di động (2021): 180 triệu
 
+- Phương pháp ba điểm (PERT):
+  - Phát triển: 63.3 triệu
+  - Kiểm thử: 23 triệu
+  - Đám mây: 19 triệu
 
-#grid(
-  columns: 3,
-  gutter: 1em,
-  [
-    *Tham số*
-    - Phát triển thêm: 60 triệu
-    - Kiểm thử thêm: 22.5 triệu
-    - Đám mây: 18 triệu
-    - Bản quyền: 15 triệu
-    - Kiểm toán: 20 triệu
-  ],
-  [
-    *Tương tự*
-    - Hệ thống học (2019): 210 triệu
-    - Website (2020): 100 triệu
-    - Ứng dụng di động (2021): 180 triệu
-  ],
-  [
-    *Ba điểm*
-    - Phát triển: 63.3 triệu
-    - Kiểm thử: 23 triệu
-    - Đám mây: 19 triệu
-    
-    _Công thức PERT_
-  ]
-)
-
-*Kiểm soát:* Quản lý giá trị thu được (CPI, SPI), báo cáo hàng tháng
+- Kiểm soát: Quản lý giá trị thu được, báo cáo hàng tháng
 
 = Phân tích so sánh Agile và Waterfall
 
@@ -212,47 +163,25 @@
 
 == Đề xuất: Phương pháp kết hợp
 
+- Giai đoạn 1 (Thác nước):
+  - Phân tích yêu cầu
+  - Thiết kế kiến trúc
+  - Cơ sở dữ liệu, API
+  - → Nền tảng vững
 
+- Giai đoạn 2 (Linh hoạt):
+  - Giai đoạn 2 tuần
+  - Họp hàng ngày
+  - Đánh giá giai đoạn
+  - → Linh hoạt
 
-#grid(
-  columns: 3,
-  gutter: 1.5em,
-  [
-    *Giai đoạn 1*
-    
-    _Thác nước_
-    
-    - Phân tích yêu cầu
-    - Thiết kế kiến trúc
-    - Cơ sở dữ liệu, API
-    
-    → Nền tảng vững
-  ],
-  [
-    *Giai đoạn 2*
-    
-    _Linh hoạt_
-    
-    - Giai đoạn 2 tuần
-    - Họp hàng ngày
-    - Đánh giá giai đoạn
-    
-    → Linh hoạt
-  ],
-  [
-    *Giai đoạn 3*
-    
-    _Thác nước_
-    
-    - Kiểm thử người dùng
-    - Đào tạo
-    - Triển khai
-    
-    → Đảm bảo chất lượng
-  ]
-)
+- Giai đoạn 3 (Thác nước):
+  - Kiểm thử người dùng
+  - Đào tạo
+  - Triển khai
+  - → Đảm bảo chất lượng
 
-*Lợi ích:* Kết hợp ổn định + linh hoạt, giảm rủi ro
+- Lợi ích: Kết hợp ổn định + linh hoạt, giảm rủi ro
 
 = Kết quả mô phỏng giai đoạn phát triển
 
@@ -262,8 +191,7 @@
 
 *Thời gian:* 2 tuần (14 ngày)
 
-// Để tên ai vậy
-*Nhóm:* 4 người (Minh, Lan, Hùng, Thảo)
+*Nhóm:* 5 người
 
 *Cam kết:* 40 điểm công việc
 
@@ -277,71 +205,52 @@
   columns: 4,
   stroke: 0.5pt,
   [*Yêu cầu người dùng*], [*Điểm*], [*Người làm*], [*Trạng thái*],
-  [GV tạo bài tập], [5], [Minh], [✓ Hoàn thành],
-  [GV đặt hạn nộp], [3], [Minh], [✓ Hoàn thành],
-  [HV xem danh sách], [3], [Lan], [✓ Hoàn thành],
-  [HV nộp bài], [8], [Lan], [✓ Hoàn thành],
-  [GV xem bài nộp], [5], [Hùng], [✓ Hoàn thành],
-  [GV chấm điểm], [8], [Hùng], [⚠ Đang làm],
-  [HV nhận thông báo], [5], [Thảo], [○ Chưa làm],
+  [GV tạo bài tập], [5], [Khang], [✓ Hoàn thành],
+  [GV đặt hạn nộp], [3], [Huy], [✓ Hoàn thành],
+  [HV xem danh sách], [3], [Hiệp], [✓ Hoàn thành],
+  [HV nộp bài], [8], [Phúc], [✓ Hoàn thành],
+  [GV xem bài nộp], [5], [Tùng], [✓ Hoàn thành],
+  [GV chấm điểm], [8], [Khang], [⚠ Đang làm],
+  [HV nhận thông báo], [5], [Huy], [○ Chưa làm],
   [Kiểm tra API], [3], [Nhóm], [✓ Hoàn thành],
 )
 
 == Các buổi họp giai đoạn
 
-// giờ → tiếng
+- Lập kế hoạch (2 tiếng):
+  - Ước lượng điểm
+  - Cam kết 40 điểm
+  - Tiêu chí hoàn thành:
+    - Đánh giá mã nguồn
+    - Kiểm thử ≥70%
+    - Giao diện được duyệt
 
-#grid(
-  columns: 2,
-  gutter: 2em,
-  [
-    *Lập kế hoạch (2 giờ)*
-    - Ước lượng điểm
-    - Cam kết 40 điểm
-    - Tiêu chí hoàn thành:
-      - Đánh giá mã nguồn
-      - Kiểm thử ≥70%
-      - Giao diện được duyệt
-  ],
-  [
-    *Họp hàng ngày (15 phút)*
-    - Hôm qua / Hôm nay / Vấn đề
-    - Xác định phụ thuộc
-    - Đồng bộ nhanh
-    
-    *Công việc cần làm:*
-    - Giới hạn file: 10MB
-    - Cài đặt Firebase
-  ]
-)
+- Họp hàng ngày (15 phút):
+  - Hôm qua / Hôm nay / Vấn đề
+  - Xác định phụ thuộc
+  - Đồng bộ nhanh
+
+- Công việc cần làm:
+  - Giới hạn file: 10MB
+  - Cài đặt Firebase
 
 == Đánh giá & Nhìn lại giai đoạn
 
-// giờ → tiếng
+- Đánh giá giai đoạn (1.5 tiếng):
+  - Trình diễn thành công 3/3 tính năng
+  - Phản hồi: thêm chấm nhanh nhiều bài
+  - Chủ sản phẩm hài lòng với 80% hoàn thành
 
-*Đánh giá giai đoạn (1.5 giờ):*
-- Trình diễn thành công 3/3 tính năng
-- Phản hồi: thêm chấm nhanh nhiều bài
-- Chủ sản phẩm hài lòng với 80% hoàn thành
-
-*Nhìn lại giai đoạn (1 giờ):*
-
-#grid(
-  columns: 2,
-  gutter: 1.5em,
-  [
-    *✓ Tiếp tục:*
+- Nhìn lại giai đoạn (1 tiếng):
+  - Tiếp tục:
     - Họp hàng ngày hiệu quả
     - Đánh giá mã phát hiện lỗi sớm
     - Nhóm hỗ trợ tốt
-  ],
-  [
-    *✗ Dừng lại:*
+  
+  - Dừng lại:
     - Cam kết quá mức
     - Chờ phụ thuộc (Firebase)
     - Nợ kỹ thuật tích lũy
-  ]
-)
 
 == Chỉ số & Biểu đồ tiến độ
 
@@ -367,66 +276,47 @@
 
 == Quản lý Dự án
 
-// bullet point
+- Lập kế hoạch:
+  - Thách thức: Ước lượng lạc quan
+  - Giải pháp: Nhiều phương pháp, dự phòng 10-20%
+  - Bài học: Chuẩn bị tình huống xấu nhất
 
-#grid(
-  columns: 2,
-  gutter: 2em,
-  [
-    *1. Lập kế hoạch*
-    - Thách thức: Ước lượng lạc quan
-    - Giải pháp: Nhiều phương pháp, dự phòng 10-20%
-    - Bài học: Chuẩn bị tình huống xấu nhất
-    
-    *2. Quản lý bên liên quan*
-    - Thách thức: Kỳ vọng khác nhau
-    - Giải pháp: Hội thảo, ưu tiên rõ ràng
-    - Bài học: Giao tiếp là chìa khóa
-  ],
-  [
-    *3. Mở rộng phạm vi*
-    - Thách thức: Tính năng mới liên tục
-    - Giải pháp: Quy trình yêu cầu thay đổi
-    - Bài học: Mở rộng phạm vi = kẻ thù số 1
-    
-    *4. Quản lý rủi ro*
-    - Thách thức: Rủi ro không lường trước
-    - Giải pháp: Xác định sớm, kế hoạch giảm thiểu
-    - Bài học: Chủ động > Bị động
-  ]
-)
+- Quản lý bên liên quan:
+  - Thách thức: Kỳ vọng khác nhau
+  - Giải pháp: Hội thảo, ưu tiên rõ ràng
+  - Bài học: Giao tiếp là chìa khóa
+
+- Mở rộng phạm vi:
+  - Thách thức: Tính năng mới liên tục
+  - Giải pháp: Quy trình yêu cầu thay đổi
+  - Bài học: Mở rộng phạm vi = kẻ thù số 1
+
+- Quản lý rủi ro:
+  - Thách thức: Rủi ro không lường trước
+  - Giải pháp: Xác định sớm, kế hoạch giảm thiểu
+  - Bài học: Chủ động > Bị động
 
 == Phát triển Phần mềm
 
-// bullet point
+- Thiết kế cơ sở dữ liệu:
+  - Nợ kỹ thuật trả giá sau
+  - Thực hành tốt nhất từ đầu
+  - Chuẩn hóa & đánh chỉ mục
 
+- Đánh giá mã & Kiểm thử:
+  - Lỗi người dùng → trễ tiến độ
+  - Kiểm thử sớm
+  - Kiểm thử đơn vị song song mã
 
-#grid(
-  columns: 2,
-  gutter: 2em,
-  [
-    *Thiết kế cơ sở dữ liệu*
-    - Nợ kỹ thuật trả giá sau
-    - Thực hành tốt nhất từ đầu
-    - Chuẩn hóa & đánh chỉ mục
-    
-    *Đánh giá mã & Kiểm thử*
-    - Lỗi người dùng → trễ tiến độ
-    - Kiểm thử sớm
-    - Kiểm thử đơn vị song song mã
-  ],
-  [
-    *Tài liệu hóa*
-    - Tài liệu API không cập nhật
-    - Tự động hóa tài liệu
-    - Phần của tiêu chí hoàn thành
-    
-    *Công nghệ sử dụng*
-    - Công nghệ mới → nhiều lỗi
-    - "Công nghệ ổn định" cho sản phẩm
-    - Cộng đồng > Xu hướng
-  ]
-)
+- Tài liệu hóa:
+  - Tài liệu API không cập nhật
+  - Tự động hóa tài liệu
+  - Phần của tiêu chí hoàn thành
+
+- Công nghệ sử dụng:
+  - Công nghệ mới → nhiều lỗi
+  - "Công nghệ ổn định" cho sản phẩm
+  - Cộng đồng > Xu hướng
 
 == Làm việc nhóm & Cộng tác
 

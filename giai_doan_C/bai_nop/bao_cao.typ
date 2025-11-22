@@ -1,57 +1,19 @@
-﻿// Xài basic report, tham khảo `ho_so_nop.typ`
+﻿#import "@preview/basic-report:0.3.1": *
 
-#set page(
-  paper: "a4",
-  margin: (x: 2.5cm, y: 3cm),
-  numbering: "1",
+#show: it => basic-report(
+  doc-category: "Quản lý dự án Phát triển Phần mềm - SE358.Q11
+
+Đề tài 2: Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ",
+  doc-title: "Báo cáo cuối kì",
+  author: "Nhóm 2",
+  language: "vi",
+  compact-mode: false,
+  it,
 )
 
-#set text(
-  font: "New Computer Modern",
-  size: 12pt,
-  lang: "vi",
-)
-
-#set par(
-  justify: true,
-  leading: 0.65em,
-  first-line-indent: 1.5em,
-)
-
-#set heading(numbering: "1.1")
-
-#align(center)[
-  #text(size: 18pt, weight: "bold")[
-    BÁO CÁO DỰ ÁN QUẢN LÝ LỚP HỌC TRỰC TUYẾN \
-    CHO TRUNG TÂM NGOẠI NGỮ
-  ]
-  
-  #v(1cm)
-  
-  #text(size: 14pt)[
-    Môn: SE358.Q11 - Quản lý dự án phần mềm \
-    Nhóm 2
-  ]
-  
-  #v(0.5cm)
-  
-  #text(size: 12pt)[
-    #datetime.today().display("[day]/[month]/[year]")
-  ]
-]
-
-#pagebreak()
-
-#outline(
-  title: "Mục lục",
-  indent: auto,
-)
-
-#pagebreak()
-
-#set heading(level: 1)
-// giữ y nguyên cái này
-// Đề mục đầu phải là đề mục 1
+#set page(margin: 1.75in)
+#set par(leading: 0.55em, spacing: 0.55em, first-line-indent: 1.8em, justify: true)
+#show heading: set block(above: 1.4em, below: 1em)
 
 = Giới thiệu dự án
 
@@ -161,11 +123,11 @@ Project Charter là văn bản chính thức khởi động dự án, được p
 
 === Thông tin cơ bản
 
-- - Tên dự án: Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ
-- - Sponsor: Ban Giám đốc Trung tâm Ngoại ngữ ABC
-- - Project Manager: Nhóm 2
-- - Ngày chuẩn bị: 01/10/2025
-- - Khách hàng: Trung tâm Ngoại ngữ ABC và học viên
+- Tên dự án: Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ
+- Sponsor: Ban Giám đốc Trung tâm Ngoại ngữ ABC
+- Project Manager: Nhóm 2
+- Ngày chuẩn bị: 01/10/2025
+- Khách hàng: Trung tâm Ngoại ngữ ABC và học viên
 
 === Mục đích dự án
 
@@ -212,10 +174,10 @@ Ngân sách này bao gồm:
 
 === Rủi ro cấp cao
 
-- - Rủi ro công nghệ: Hạ tầng server, vấn đề bảo mật dữ liệu
-- - Rủi ro người dùng: Chưa quen với hệ thống mới, cần thời gian làm quen
-- - Rủi ro nguồn lực: Hạn chế về ngân sách và thời gian triển khai
-- - Rủi ro scope creep: Yêu cầu thay đổi, mở rộng phạm vi ngoài kế hoạch
+- Rủi ro công nghệ: Hạ tầng server, vấn đề bảo mật dữ liệu
+- Rủi ro người dùng: Chưa quen với hệ thống mới, cần thời gian làm quen
+- Rủi ro nguồn lực: Hạn chế về ngân sách và thời gian triển khai
+- Rủi ro scope creep: Yêu cầu thay đổi, mở rộng phạm vi ngoài kế hoạch
 
 == Work Breakdown Structure (WBS)
 
@@ -503,13 +465,13 @@ Trong giai đoạn phát triển, nhóm áp dụng Scrum framework với các Sp
   columns: 4,
   stroke: 0.5pt,
   [*User Story*], [*Story Points*], [*Assignee*], [*Status*],
-  [Giảng viên tạo bài tập mới], [5], [Minh], [Done],
-  [Giảng viên set deadline cho bài tập], [3], [Minh], [Done],
-  [Học viên xem danh sách bài tập], [3], [Lan], [Done],
-  [Học viên nộp bài (upload file)], [8], [Lan], [Done],
-  [Giảng viên xem bài nộp], [5], [Hùng], [Done],
-  [Giảng viên chấm điểm và comment], [8], [Hùng], [In Progress],
-  [Học viên nhận thông báo điểm], [5], [Thảo], [To Do],
+  [Giảng viên tạo bài tập mới], [5], [Khang], [Done],
+  [Giảng viên set deadline cho bài tập], [3], [Huy], [Done],
+  [Học viên xem danh sách bài tập], [3], [Hiệp], [Done],
+  [Học viên nộp bài (upload file)], [8], [Phúc], [Done],
+  [Giảng viên xem bài nộp], [5], [Tùng], [Done],
+  [Giảng viên chấm điểm và comment], [8], [Khang], [In Progress],
+  [Học viên nhận thông báo điểm], [5], [Huy], [To Do],
   [API validation cho file upload], [3], [Backend team], [Done],
 )
 
@@ -570,9 +532,9 @@ _Tổng Story Points: 40 (Velocity dự kiến: 35-40)_
 - Tham gia: Team + Stakeholders (PO, giảng viên, quản lý)
 
 - Demo:
-1. Minh demo: Giảng viên tạo bài tập, set deadline → ✓ Approved
-2. Lan demo: Học viên xem danh sách, nộp bài → ✓ Approved
-3. Hùng demo: Giảng viên xem bài nộp, chấm điểm → ⚠ Feedback: thêm tính năng chấm nhanh cho nhiều bài
+1. Khang demo: Giảng viên tạo bài tập, set deadline → ✓ Approved
+2. Huy demo: Học viên xem danh sách, nộp bài → ✓ Approved
+3. Hiệp demo: Giảng viên xem bài nộp, chấm điểm → ⚠ Feedback: thêm tính năng chấm nhanh cho nhiều bài
 
 - Kết quả:
 - Completed: 32 story points / 40 (80%)
