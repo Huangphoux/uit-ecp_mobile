@@ -20,10 +20,10 @@
 #set par(leading: 0.55em, spacing: 0.55em, first-line-indent: 1.8em, justify: true)
 #show heading: set block(above: 1.4em, below: 1em)
 
-= Project Closeout
+= Project Closeout (Huy)
 #include "project_closeout.typ"
 
-= Lesson Learned
+= Lesson Learned (Khang)
 #include "lesson_learned.typ"
 
 = Phản hồi cá nhân
