@@ -96,9 +96,6 @@ Hệ thống chạy ổn định, nghiệm thu thành công và được ngườ
 === Project Manager Authority Level
 Toàn quyền trong việc điều phối nhóm dự án.
 
-=== Project Exit Criteria
-Hệ thống chạy ổn định, nghiệm thu thành công và được người dùng chấp nhận.
-
 === Staffing Decisions
 Do Project Manager quyết định và điều phối.
 
