@@ -2,574 +2,450 @@
 #set page(margin: 1.5cm)
 #set text(size: 10pt)
 
-- Project Title: *Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ*
+- Tên dự án: *Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ*
 #let today = datetime.today()
-- Data Prepared: #today.display("[day]/[month]/[year]")
-- Project Manager: Nhóm 2
-- Duration: Giai đoạn A-D (24 tuần)
-- Budget: 500,000,000 VNĐ
+- Ngày lập: #today.display("[day]/[month]/[year]")
+- Quản lý dự án: Nhóm 2
+- Thời gian: Giai đoạn A-D (24 tuần)
+- Ngân sách: 500.000.000 VNĐ
 
-= Project Performance Analysis
+= Phân tích hiệu suất dự án
 #table(
   columns: 3,
   stroke: 0.5pt,
-  [*Category*], [*What Worked Well*], [*What Can be Improved*],
+  [*Hạng mục*], [*Những điểm tốt*], [*Cần cải thiện*],
   
-  [Requirements definition and management], 
-  [- Stakeholder register chi tiết với 10 nhóm đối tượng rõ ràng\
-  - User stories với acceptance criteria cụ thể cho từng tính năng\
-  - Workshops với giáo viên và học viên để thu thập yêu cầu\
-  - Module được xác định rõ: quản lý lớp, lịch học, điểm, tài liệu],
-  [- Một số yêu cầu phi chức năng chưa được đặc tả đầy đủ ban đầu\
-  - Conflict detection policy chưa rõ ràng từ đầu (phát sinh Sprint 2)\
-  - Cần traceability matrix để track requirements qua các giai đoạn],
+  [Quản lý yêu cầu], 
+  [- Sổ đăng ký các bên liên quan chi tiết (10 nhóm)\
+  - User stories có tiêu chí chấp nhận cụ thể\
+  - Thu thập yêu cầu qua workshop với giáo viên/học viên\
+  - Module rõ ràng: quản lý lớp, lịch học, điểm, tài liệu],
+  [- Yêu cầu phi chức năng chưa đầy đủ ban đầu\
+  - Chính sách phát hiện xung đột chưa rõ (phát sinh Sprint 2)\
+  - Cần ma trận truy xuất để theo dõi yêu cầu qua các giai đoạn],
   
-  [Scope definition and management], 
-  [- WBS phân rã chi tiết 4 giai đoạn với 24 tuần timeline\
-  - Project Charter xác định rõ mục tiêu STCQ (Scope, Time, Cost, Quality)\
-  - Boundaries rõ ràng: không thanh toán online giai đoạn đầu\
-  - 3 rủi ro scope được nhận diện và có phương án xử lý],
-  [- Scope creep xảy ra khi thêm tính năng conflict detection không có trong plan ban đầu\
-  - Change control process chưa được document đầy đủ\
-  - Một số deliverables không được prioritize theo MoSCoW],
+  [Quản lý phạm vi], 
+  [- WBS phân rá chi tiết 4 giai đoạn, 24 tuần\
+  - Hiến chương xác định rõ mục tiêu STCQ\
+  - Ranh giới rõ: không thanh toán online giai đoạn đầu\
+  - 3 rủi ro phạm vi có phương án xử lý],
+  [- Mở rộng phạm vi khi thêm tính năng phát hiện xung đột\
+  - Quy trình kiểm soát thay đổi chưa đầy đủ\
+  - Deliverables chưa ưu tiên theo MoSCoW],
   
-  [Schedule development and control], 
-  [- Gantt chart rõ ràng với dependencies và milestones\
-  - Sử dụng 2-week sprints hiệu quả cho Agile execution\
-  - Daily standups giúp identify blockers sớm\
+  [Quản lý tiến độ], 
+  [- Biểu đồ Gantt rõ ràng với phụ thuộc và mốc quan trọng\
+  - Sprint 2 tuần hiệu quả\
+  - Họp hàng ngày phát hiện vấn đề sớm\
   - Một số thành viên hoàn thành nhanh (Khang 2h 38 phút)],
-  [- Underestimate effort cho conflict detection và API integration\
-  - Sprint 3 phải adjust timeline do members bận lịch học\
-  - Buffer time chưa đủ cho tasks phụ thuộc external services\
-  - Definition of Done chưa strict từ đầu],
+  [- Ước lượng thiếu cho phát hiện xung đột và tích hợp API\
+  - Sprint 3 điều chỉnh do thành viên bận lịch học\
+  - Buffer time chưa đủ cho task phụ thuộc bên ngoài\
+  - Định nghĩa Hoàn thành chưa chặt chẽ từ đầu],
   
-  [Cost estimating and control], 
-  [- Sử dụng 3 phương pháp ước lượng: Parametric, Analogous, Three-Point\
-  - Baseline 500M VNĐ với phân bổ rõ: 65% labor, 20% tech, 5% training, 10% contingency\
-  - EVM tracking với CPI, SPI được setup\
-  - Control thresholds rõ ràng (5%, 10%)],
-  [- Analogous estimate range quá rộng (100-210M)\
-  - Chưa có historical data chính xác từ dự án tương tự\
-  - Cost control thresholds chưa được test trong thực tế\
-  - OPEX vs CAPEX chưa được phân loại rõ ràng],
+  [Quản lý chi phí], 
+  [- 3 phương pháp ước lượng: Tham số, Tương tự, Ba điểm\
+  - Baseline 500M với phân bổ rõ (65% nhân lực, 20% công nghệ, 5% đào tạo, 10% dự phòng)\
+  - Thiết lập theo dõi EVM (CPI, SPI)\
+  - Ngưỡng kiểm soát rõ ràng (5%, 10%)],
+  [- Ước lượng tương tự có khoảng quá rộng (100-210M)\
+  - Thiếu dữ liệu lịch sử chính xác từ dự án tương tự\
+  - Ngưỡng kiểm soát chưa được test thực tế\
+  - Chưa phân loại rõ OPEX vs CAPEX],
   
-  [Quality planning and control], 
-  [- Quality standards dựa ISO/IEC 25010\
-  - Objectives rõ ràng: response time dưới 2s, uptime trên 99.5%, satisfaction trên 90%\
-  - Testing process: Unit → Integration → UAT\
-  - Automation tools planned: Selenium, Postman],
-  [- Chưa có metrics cho code quality (coverage, complexity)\
-  - UAT chưa được thực hiện với end-users thực tế\
-  - Security testing chưa đầy đủ (penetration testing)\
-  - API response format chưa consistent giữa modules (phát sinh Sprint 3)],
+  [Quản lý chất lượng], 
+  [- Tiêu chuẩn dựa ISO/IEC 25010\
+  - Mục tiêu rõ: thời gian phản hồi dưới 2s, uptime trên 99.5%\
+  - Quy trình kiểm thử: Unit → Integration → UAT\
+  - Công cụ tự động hóa: Selenium, Postman],
+  [- Chưa có metrics cho chất lượng code (coverage, complexity)\
+  - UAT chưa thực hiện với người dùng thật\
+  - Kiểm thử bảo mật chưa đầy đủ\
+  - Format phản hồi API chưa nhất quán giữa các module (Sprint 3)],
   
-  [Physical resource planning and control], 
-  [- RACI matrix phân công trách nhiệm rõ ràng\
-  - Resource plan xác định skills: Agile, React Native, Node.js\
-  - GitHub Project track assignments hiệu quả\
-  - Cloud infrastructure với pay-as-you-go model],
-  [- Overload ở Sprint 2-3 do members bận lịch học\
-  - Chưa có backup resource khi vắng mặt\
-  - Development environment setup mất thời gian ban đầu\
-  - Staging environment thiếu (phát sinh Sprint 2)],
+  [Quản lý nguồn lực], 
+  [- Ma trận RACI phân công rõ ràng\
+  - Kế hoạch nguồn lực xác định kỹ năng: Agile, React Native, Node.js\
+  - GitHub Project theo dõi phân công hiệu quả\
+  - Hạ tầng cloud với mô hình trả theo mức dùng],
+  [- Quá tải Sprint 2-3 do thành viên bận học\
+  - Chưa có nguồn lực dự phòng khi vắng mặt\
+  - Thiết lập môi trường phát triển mất thời gian\
+  - Môi trường staging thiếu (phát sinh Sprint 2)],
   
-  [Team planning, development, and performance], 
-  [- Scrum roles rõ ràng: PO (Phúc), SM (Khang, Hiệp), Dev (Huy, Tùng)\
-  - Daily standup format Yesterday-Today-Blockers hiệu quả\
-  - Retrospective sau mỗi giai đoạn để lessons learned\
-  - Một số members hoàn thành sớm và chất lượng tốt],
-  [- Teamwork chưa smooth giai đoạn A (ít giao tiếp)\
+  [Phát triển nhóm], 
+  [- Vai trò Scrum rõ: PO (Phúc), SM (Khang, Hiệp), Dev (Huy, Tùng)\
+  - Họp hàng ngày format Hôm qua-Hôm nay-Vướng mắc hiệu quả\
+  - Hồi cố sau mỗi giai đoạn để rút kinh nghiệm\
+  - Một số thành viên hoàn thành sớm và chất lượng tốt],
+  [- Teamwork chưa mượt giai đoạn A (ít giao tiếp)\
   - Một số thành viên chưa nghiêm túc ban đầu\
-  - Code review process chưa mandatory từ đầu\
-  - Team building activities thiếu],
+  - Quy trình review code chưa bắt buộc từ đầu\
+  - Thiếu hoạt động team building],
   
-  [Communications management], 
-  [- Communication plan chi tiết cho 10 stakeholders\
-  - Multiple channels: email, meetings, Jira, surveys\
-  - Kick-off meeting có Q&A session hiệu quả\
-  - Escalation process 3 levels rõ ràng],
-  [- API contract communication giữa FE-BE chưa tốt (phát sinh Sprint 2)\
-  - Meeting minutes không được distribute ngay\
-  - Naming convention chưa thống nhất team-wide (Sprint 3)\
-  - Dashboard cho stakeholders self-check tiến độ thiếu],
+  [Quản lý truyền thông], 
+  [- Kế hoạch chi tiết cho 10 bên liên quan\
+  - Nhiều kênh: email, họp, Jira, khảo sát\
+  - Họp khởi động có phiên Q&A hiệu quả\
+  - Quy trình báo cáo 3 cấp rõ ràng],
+  [- Giao tiếp API contract giữa FE-BE chưa tốt (phát sinh Sprint 2)\
+  - Biên bản họp không phân phối ngay\
+  - Quy ước đặt tên chưa thống nhất (Sprint 3)\
+  - Thiếu dashboard cho các bên tự kiểm tra tiến độ],
   
-  [Reporting], 
-  [- Báo cáo cuối kỳ comprehensive với 5 phần chính\
+  [Báo cáo], 
+  [- Báo cáo cuối kỳ toàn diện với 5 phần chính\
   - Slide thuyết trình 15 phút, 100% tiếng Việt\
-  - Scrum meeting minutes chi tiết (Yesterday-Today-Blockers)\
-  - Retrospective document sau mỗi phase],
-  [- Sprint reports chưa được tạo tự động từ Jira\
-  - Burndown charts chưa update real-time\
-  - Report templates chưa standardized\
-  - Cost reporting format chưa được test thực tế],
+  - Biên bản họp Scrum chi tiết\
+  - Tài liệu hồi cố sau mỗi phase],
+  [- Báo cáo Sprint chưa tự động từ Jira\
+  - Biểu đồ Burndown chưa cập nhật realtime\
+  - Templates báo cáo chưa chuẩn hóa\
+  - Format báo cáo chi phí chưa test thực tế],
   
-  [Risk management], 
-  [- Risk register với 2 rủi ro chính: RISK-01 (cắt giảm ngân sách), RISK-07 (trễ tiến độ)\
-  - Response strategies cụ thể: Mitigate, Transfer, Accept\
-  - Revised score từ 6→2 sau mitigation cho cả 2 risks\
-  - Action items có owner và deadline rõ ràng],
-  [- Risk reviews không định kỳ để update register\
-  - Một số rủi ro kỹ thuật chưa nhận diện sớm (API breaking changes)\
-  - Contingency reserve 10% có thể chưa đủ\
-  - Risk monitoring KPIs chưa được track],
+  [Quản lý rủi ro], 
+  [- Sổ đăng ký rủi ro với 2 rủi ro chính\
+  - Chiến lược ứng phó cụ thể: Giảm thiểu, Chuyển giao, Chấp nhận\
+  - Điểm rủi ro từ 6→2 sau xử lý\
+  - Action items có người chịu trách nhiệm và deadline],
+  [- Đánh giá rủi ro không định kỳ\
+  - Một số rủi ro kỹ thuật chưa nhận diện sớm\
+  - Dự phòng 10% có thể chưa đủ\
+  - KPI theo dõi rủi ro chưa được track],
   
-  [Procurement planning and management], 
-  [- Tech stack chủ yếu open-source: React Native, Node.js, Firebase\
-  - Cloud services với pricing model rõ ràng\
-  - Licenses được tính vào cost estimate (15M)\
-  - Procurement lead time 2-4 tuần được plan],
-  [- Chưa có vendor evaluation matrix\
-  - SLA cho cloud services chưa được negotiate\
-  - Procurement process chưa được document đầy đủ\
-  - Chưa có 3 quotes cho mua sắm lớn >50M],
-  
-  [Stakeholder engagement], 
-  [- Stakeholder register phân loại theo Power/Interest matrix\
-  - Engagement strategies khác nhau cho từng nhóm\
-  - Regular demos cho Teachers và Students\
-  - Sponsor weekly reports],
-  [- Một số stakeholders (Government, Marketing) ít engaged\
-  - Stakeholder satisfaction surveys chưa có\
-  - Expectation management cần improve\
-  - Feedback loop chưa close được nhanh],
-  
-  [Process improvement information], 
-  [- Retrospective sau mỗi giai đoạn identify improvements\
-  - Start-Stop-Continue format hiệu quả\
-  - Lessons learned được document\
-  - Blockers được escalate trong 24h (Sprint 2, 3)],
-  [- Process improvements chưa được quantify bằng metrics\
-  - Không có process documentation (playbook)\
-  - Chưa compare với industry benchmarks\
-  - Action items từ retro chưa track completion],
-  
-  [Product-specific information], 
-  [- Architecture: Client-Server với RESTful API\
-  - Frontend: React Native cross-platform\
-  - Backend: Node.js + Express\
-  - Authentication: RBAC cho 3 user groups\
-  - Module rõ ràng: quản lý lớp, lịch, điểm, tài liệu, bài tập],
-  [- Technical debt tích lũy Sprint 2-3\
-  - API contract chưa consistent FE-BE ban đầu\
-  - Naming convention chưa standardized\
-  - Staging environment setup muộn\
-  - CI/CD pipeline chưa fully automated],
-  
-  [Other], 
-  [- Sử dụng AI (ChatGPT) hiệu quả cho brainstorming, templates\
-  - Typst tạo documents professional\
-  - Hybrid approach: Waterfall planning + Agile execution\
-  - GitHub version control tốt],
-  [- Một số files chưa hoàn thành đúng hạn\
-  - AI usage guidelines chưa standardized\
-  - Documentation tools chưa integrate tốt\
-  - Knowledge sharing sessions thiếu],
+  [Quản lý mua sắm], 
+  [- Tech stack chủ yếu mã nguồn mở\
+  - Dịch vụ cloud với mô hình giá rõ ràng\
+  - Licenses tính vào ước lượng chi phí (15M)\
+  - Thời gian mua sắm 2-4 tuần được lên kế hoạch],
+  [- Chưa có ma trận đánh giá nhà cung cấp\
+  - SLA cho dịch vụ cloud chưa thương lượng\
+  - Quy trình mua sắm chưa được tài liệu hóa\
+  - Chưa có 3 báo giá cho mua sắm lớn >50M],
 )
 
+= Tổng kết bài học kinh nghiệm
 
-= Lesson Learned Summary
-== Risks and Issues
+== Rủi ro và vấn đề
 #table(
   columns: 3,
   stroke: 0.5pt,
-  [*Risk or Issue Description*], [*Response*], [*Comments*],
+  [*Mô tả*], [*Cách xử lý*], [*Nhận xét*],
   
-  [*RISK-01: Cắt giảm ngân sách*\
-  \ Probability: Medium (2)\
-  Impact: High (3)\
-  Score: 6\
-  \ Owner: PM & Sponsor],
-  [*Mitigation:*\
-  - MVP approach: Focus core features\
-  - Phased funding: Release từng milestone\
-  - Cost reduction plan\
-  - Buffer 20M contingency (10%)\
-  \ *Revised Score: 2*],
-  [Strategy hiệu quả. MVP với MoSCoW prioritization giúp bảo vệ core features. Phased funding theo milestone giảm risk exposure. Nếu xảy ra thực tế, defer non-critical features sang phase 2.],
+  [*RR-01: Cắt giảm ngân sách*\
+  Xác suất: Trung bình (2)\
+  Tác động: Cao (3)\
+  Điểm: 6],
+  [*Giảm thiểu:*\
+  - Tiếp cận MVP: tập trung tính năng cốt lõi\
+  - Tài trợ theo giai đoạn\
+  - Kế hoạch giảm chi phí\
+  - Buffer 50M dự phòng\
+  \ *Điểm sau xử lý: 2*],
+  [Chiến lược hiệu quả. MVP với ưu tiên MoSCoW bảo vệ tính năng cốt lõi. Nếu xảy ra, hoãn tính năng không thiết yếu sang phase 2.],
   
-  [*RISK-07: Trễ tiến độ*\
-  \ Probability: High (3)\
-  Impact: Medium (2)\
-  Score: 6\
-  \ Owner: PM & Tech Lead],
-  [*Mitigation:*\
-  - 2-week sprints: Early detection\
-  - Buffer time 10% mỗi phase\
-  - CI/CD automation\
-  - Change control board (CCB)\
-  - Daily standups resolve blockers trong 24h\
-  \ *Revised Score: 2*],
-  [Đã xảy ra Sprint 2-3 (conflict detection, API issues). Buffer time giúp recover. Lesson: Improve estimation accuracy, consider team capacity realistically. Sprint adjustment cần linh hoạt khi members busy.],
+  [*RR-07: Trễ tiến độ*\
+  Xác suất: Cao (3)\
+  Tác động: Trung bình (2)\
+  Điểm: 6],
+  [*Giảm thiểu:*\
+  - Sprint 2 tuần: phát hiện sớm\
+  - Buffer time 10%\
+  - Tự động hóa CI/CD\
+  - Họp hàng ngày giải quyết vướng mắc trong 24h\
+  \ *Điểm sau xử lý: 2*],
+  [Đã xảy ra Sprint 2-3. Buffer time giúp phục hồi. Bài học: cải thiện độ chính xác ước lượng, xem xét năng lực nhóm thực tế.],
   
-  [*ISSUE-01: Conflict detection policy không rõ*\
-  \ Sprint 2, Blocker 1\
-  Severity: High],
-  [*Resolution:*\
-  - PO (Phúc) define policy rõ ràng\
-  - Document trong SRS\
-  - Review với Teachers stakeholders\
-  \ Status: Resolved Sprint 2 end],
-  [Requirements ambiguity. Root cause: Business rules chưa được clarify với stakeholders sớm. Prevention: BA/PO phải proactive hơn trong requirements analysis phase. Edge cases cần được identify trước coding.],
+  [*VM-01: Chính sách phát hiện xung đột không rõ*\
+  Sprint 2, Mức độ: Cao],
+  [*Giải quyết:*\
+  - PO định nghĩa chính sách rõ ràng\
+  - Tài liệu trong SRS\
+  - Đánh giá với các bên liên quan\
+  \ Trạng thái: Đã giải quyết cuối Sprint 2],
+  [Yêu cầu mơ hồ. Nguyên nhân gốc: quy tắc nghiệp vụ chưa làm rõ với các bên sớm. Phòng ngừa: BA/PO chủ động hơn trong phân tích yêu cầu.],
   
-  [*ISSUE-02: API contract inconsistent FE/BE*\
-  \ Sprint 2, Blocker 2\
-  Severity: High],
-  [*Resolution:*\
-  - SMs (Khang/Hiệp) sync API specs\
-  - Use OpenAPI/Swagger documentation\
-  - Weekly FE-BE sync meetings mandatory\
-  \ Status: Resolved Sprint 2 end],
-  [Communication gap giữa frontend và backend teams. Root cause: API contract không được define trước coding. Prevention: Contract-first approach, API design doc mandatory trước implementation. Code review phải check API compliance.],
+  [*VM-02: API contract không nhất quán FE/BE*\
+  Sprint 2, Mức độ: Cao],
+  [*Giải quyết:*\
+  - SM đồng bộ API specs\
+  - Dùng OpenAPI/Swagger\
+  - Họp FE-BE hàng tuần bắt buộc\
+  \ Trạng thái: Đã giải quyết cuối Sprint 2],
+  [Khoảng cách giao tiếp giữa frontend và backend. Phòng ngừa: tiếp cận contract-first, tài liệu thiết kế API bắt buộc trước coding.],
   
-  [*ISSUE-03: Naming convention không consistent*\
-  \ Sprint 3, Blocker 1\
-  Severity: Medium],
-  [*Resolution:*\
-  - Team define coding standards document\
+  [*VM-03: Quy ước đặt tên không nhất quán*\
+  Sprint 3, Mức độ: Trung bình],
+  [*Giải quyết:*\
+  - Nhóm định nghĩa tài liệu coding standards\
   - ESLint + Prettier cho FE\
   - Linter cho BE\
-  - Code review mandatory before merge\
-  \ Status: Resolved Sprint 3 mid],
-  [Technical debt tích lũy. Root cause: Coding standards không được setup từ Sprint 1. Prevention: Setup linters và coding guidelines trong sprint 0. Enforce trong CI/CD pipeline. Pre-commit hooks.],
+  - Review code bắt buộc trước merge\
+  \ Trạng thái: Đã giải quyết giữa Sprint 3],
+  [Nợ kỹ thuật tích lũy. Phòng ngừa: thiết lập linters và hướng dẫn coding trong sprint 0. Áp dụng trong CI/CD pipeline.],
   
-  [*ISSUE-04: Staging environment thiếu*\
-  \ Sprint 2, Blocker 4\
-  Severity: High],
-  [*Resolution:*\
-  - DevOps setup staging env\
-  - Docker containers cho consistency\
-  - Mirror production config\
-  \ Status: Resolved Sprint 3 start],
-  [Infrastructure gap. Root cause: Full environments (dev, staging, prod) không được setup từ đầu. Prevention: Infrastructure as Code (IaC), setup all environments trước Sprint 1. Parity between staging và prod.],
+  [*VM-04: Thiếu môi trường staging*\
+  Sprint 2, Mức độ: Cao],
+  [*Giải quyết:*\
+  - DevOps thiết lập staging env\
+  - Docker containers cho tính nhất quán\
+  - Mirror cấu hình production\
+  \ Trạng thái: Đã giải quyết đầu Sprint 3],
+  [Thiếu hạ tầng. Phòng ngừa: Infrastructure as Code, thiết lập tất cả môi trường trước Sprint 1.],
   
-  [*ISSUE-05: Timeline adjustment do members busy*\
-  \ Sprint 3, Blocker 3\
-  Severity: Medium],
-  [*Resolution:*\
-  - PO adjust sprint scope\
-  - Prioritize must-have features\
-  - Defer nice-to-have sang Sprint 4\
-  - Team commitment giảm từ 40 xuống 30 points\
-  \ Status: Ongoing monitoring],
-  [Resource availability issue. Root cause: Sprint planning không consider team capacity realistically (lịch học). Prevention: Sprint planning phải check availability trước commit. Better under-promise than over-commit. Velocity dựa historical average.],
-  
-  [*ISSUE-06: Upload file size limit chưa rõ*\
-  \ Sprint 3\
-  Severity: Low],
-  [*Resolution:*\
-  - PO confirm limit 10MB\
-  - Add validation ở cả FE và BE\
-  - Error messages user-friendly\
-  \ Status: Resolved Sprint 3],
-  [Requirements detail thiếu. Prevention: Non-functional requirements phải được specify đầy đủ trong SRS. Validation rules cần được document rõ ràng.],
+  [*VM-05: Điều chỉnh timeline do thành viên bận*\
+  Sprint 3, Mức độ: Trung bình],
+  [*Giải quyết:*\
+  - PO điều chỉnh phạm vi sprint\
+  - Ưu tiên tính năng must-have\
+  - Hoãn nice-to-have sang Sprint 4\
+  - Cam kết nhóm giảm từ 40 xuống 30 điểm\
+  \ Trạng thái: Đang theo dõi],
+  [Vấn đề sẵn có nguồn lực. Phòng ngừa: hoạch định sprint phải kiểm tra khả năng trước cam kết. Tốt hơn cam kết ít hơn khả năng thực tế.],
 )
 
-== Quality Defects
+== Lỗi chất lượng
 #table(
   columns: 3,
   stroke: 0.5pt,
-  [*Defect Description*], [*Resolution*], [*Comments*],
+  [*Mô tả lỗi*], [*Cách sửa*], [*Nhận xét*],
   
-  [*DEF-001: UI validation không catch empty fields*\
-  \ Severity: Medium\
-  Found: Sprint 2 testing\
-  Module: Class Management],
-  [*Fix:*\
-  - Frontend validation: Required field checks\
-  - Backend validation: Schema validation\
-  - Error messages user-friendly (Vietnamese)\
-  - Unit tests cho validation logic\
-  \ Status: Fixed Sprint 2],
-  [Basic validation oversight. Root cause: Lack of validation checklist, không có acceptance criteria cho validation. Prevention: Use validation library (Yup for FE, Joi for BE). Validation rules trong SRS. Test cases phải cover empty/null/invalid inputs.],
+  [*LOI-001: UI validation không bắt trường rỗng*\
+  Mức độ: Trung bình\
+  Phát hiện: Sprint 2\
+  Module: Quản lý lớp],
+  [*Sửa:*\
+  - Frontend validation: kiểm tra trường bắt buộc\
+  - Backend validation: kiểm tra schema\
+  - Thông báo lỗi thân thiện (tiếng Việt)\
+  - Unit tests cho logic validation\
+  \ Trạng thái: Đã sửa Sprint 2],
+  [Thiếu sót validation cơ bản. Phòng ngừa: dùng thư viện validation (Yup cho FE, Joi cho BE). Test cases phải cover empty/null/invalid inputs.],
   
-  [*DEF-002: API response format khác nhau across modules*\
-  \ Severity: High\
-  Found: Sprint 3 integration testing\
-  Module: Multiple (Class, Assignment, Grading)],
-  [*Fix:*\
-  - Standardize response format:\
-  ```json
-  {
-    "success": boolean,
-    "data": object,
-    "error": string
-  }
-  ```\
-  - Update all endpoints\
-  - Add response interceptor\
-  - Update API documentation\
-  \ Status: Fixed Sprint 3],
-  [Inconsistent architecture. Root cause: No API design guidelines từ đầu, mỗi dev tự implement theo cách riêng. Prevention: API design document mandatory trước coding. Use response wrapper/middleware. Code review check compliance. OpenAPI schema validation.],
+  [*LOI-002: Format phản hồi API khác nhau giữa các module*\
+  Mức độ: Cao\
+  Phát hiện: Sprint 3\
+  Module: Nhiều module],
+  [*Sửa:*\
+  - Chuẩn hóa format phản hồi\
+  - Cập nhật tất cả endpoints\
+  - Thêm response interceptor\
+  - Cập nhật tài liệu API\
+  \ Trạng thái: Đã sửa Sprint 3],
+  [Kiến trúc không nhất quán. Phòng ngừa: tài liệu thiết kế API bắt buộc trước coding. Dùng response wrapper/middleware.],
   
-  [*DEF-003: Schedule conflict detection không work cho recurring classes*\
-  \ Severity: High\
-  Found: Sprint 2 demo\
-  Module: Schedule Management],
-  [*Fix:*\
-  - Implement recurring event detection algorithm\
-  - Check overlaps cho all instances\
-  - Use interval tree data structure\
-  - Add test cases cho recurring patterns\
-  \ Status: Fixed Sprint 3],
-  [Complex business logic underestimated. Root cause: Requirements không specify recurring case, chỉ có simple conflict. Prevention: Edge case analysis trong requirements phase. User stories cần cover all scenarios. Algorithm complexity estimation.],
+  [*LOI-003: Phát hiện xung đột lịch không hoạt động cho lớp định kỳ*\
+  Mức độ: Cao\
+  Phát hiện: Sprint 2\
+  Module: Quản lý lịch],
+  [*Sửa:*\
+  - Implement thuật toán phát hiện sự kiện định kỳ\
+  - Kiểm tra overlap cho tất cả instances\
+  - Dùng cấu trúc dữ liệu interval tree\
+  - Thêm test cases cho pattern định kỳ\
+  \ Trạng thái: Đã sửa Sprint 3],
+  [Logic nghiệp vụ phức tạp bị đánh giá thấp. Phòng ngừa: phân tích edge case trong phase yêu cầu. User stories cần cover tất cả kịch bản.],
   
-  [*DEF-004: Performance degradation với more than 1000 records*\
-  \ Severity: Medium\
-  Found: Sprint 3 performance testing\
-  Module: Class List, Assignment List],
-  [*Optimization:*\
-  - Database indexing (class_id, teacher_id, date)\
-  - Pagination (limit 50 records/page)\
+  [*LOI-004: Performance giảm với hơn 1000 bản ghi*\
+  Mức độ: Trung bình\
+  Phát hiện: Sprint 3\
+  Module: Danh sách lớp, Bài tập],
+  [*Tối ưu:*\
+  - Database indexing\
+  - Phân trang (50 bản ghi/trang)\
   - Lazy loading cho mobile\
-  - Query optimization (N+1 problem)\
-  - Caching cho frequently accessed data\
-  \ Status: Fixed Sprint 3],
-  [Scalability issue. Root cause: No performance testing early, không set performance criteria. Prevention: Performance objectives từ đầu (response time dưới 2s). Load testing định kỳ. Database design review. Query profiling.],
+  - Tối ưu query (N+1 problem)\
+  - Caching cho dữ liệu truy cập thường xuyên\
+  \ Trạng thái: Đã sửa Sprint 3],
+  [Vấn đề khả năng mở rộng. Phòng ngừa: mục tiêu performance từ đầu (thời gian phản hồi dưới 2s). Load testing định kỳ.],
   
-  [*DEF-005: Firebase notification không trigger khi app background*\
-  \ Severity: Medium\
-  Found: Sprint 3 UAT\
-  Module: Notification],
-  [*Fix:*\
+  [*LOI-005: Firebase notification không trigger khi app background*\
+  Mức độ: Trung bình\
+  Phát hiện: Sprint 3 UAT\
+  Module: Thông báo],
+  [*Sửa:*\
   - Config Firebase Cloud Messaging đúng\
   - Handle background notification trong native code\
   - Test trên cả iOS và Android\
-  - Add notification permission request\
-  \ Status: In Progress],
-  [Platform-specific issue. Root cause: Firebase setup không follow best practices, chưa test đầy đủ trên cả 2 platforms. Prevention: Cross-platform testing checklist. Follow official documentation. Test trên real devices, không chỉ emulator.],
-  
-  [*DEF-006: Bulk grading API timeout với more than 100 students*\
-  \ Severity: Low\
-  Found: Sprint 3\
-  Module: Grading],
-  [*Fix:*\
-  - Implement async processing\
-  - Break into batches (20 students/batch)\
-  - Progress indicator cho user\
-  - Background job queue\
-  \ Status: Deferred to Sprint 4],
-  [Batch operation not optimized. Root cause: Synchronous processing cho large dataset. Prevention: Design for scalability từ đầu. Async operations cho batch jobs. Set timeout limits. User feedback during long operations.],
+  - Thêm yêu cầu quyền notification\
+  \ Trạng thái: Đang xử lý],
+  [Vấn đề đặc thù platform. Phòng ngừa: checklist testing cross-platform. Follow tài liệu chính thức. Test trên thiết bị thật.],
 )
 
-== Vendor Management
+== Quản lý nhà cung cấp
 #table(
-  columns: 4,
+  columns: 3,
   stroke: 0.5pt,
-  [*Vendor*], [*Issue*], [*Resolution*], [*Comments*],
+  [*Nhà cung cấp*], [*Vấn đề & Giải quyết*], [*Nhận xét*],
   
   [*AWS / GCP*\
-  (Cloud Infrastructure)\
-  \ Cost: 18M/year estimated],
-  [*Issue:*\
-  - Pricing model phức tạp, khó ước lượng chính xác monthly cost\
-  - Pay-as-you-go uncertainty\
-  - Multiple services (compute, storage, network) với pricing khác nhau],
-  [*Resolution:*\
-  - Use AWS/GCP Cost Calculator\
-  - Set billing alerts ở 80% budget\
-  - Monitor usage với CloudWatch/Cloud Monitoring\
-  - Reserved instances cho predictable workload\
-  - Monthly cost review meetings],
-  [Actual cost sẽ vary based on traffic và usage patterns. Recommend start với on-demand để understand usage, sau đó optimize với reserved instances. Need cost allocation tags để track per-module cost. Consider multi-cloud cho backup/disaster recovery.],
+  (Hạ tầng Cloud)\
+  Chi phí: 18M/năm],
+  [*Vấn đề:* Mô hình giá phức tạp, khó ước lượng\
+  \ *Giải quyết:*\
+  - Dùng Cost Calculator\
+  - Cảnh báo billing ở 80%\
+  - Theo dõi usage\
+  - Reserved instances\
+  - Họp đánh giá chi phí hàng tháng],
+  [Chi phí thực tế sẽ thay đổi dựa trên traffic và usage. Khuyến nghị bắt đầu với on-demand để hiểu usage, sau đó tối ưu với reserved instances.],
   
   [*Firebase*\
-  (Authentication & Realtime Database)\
-  \ Cost: Free tier → Blaze plan],
-  [*Issue:*\
-  - Free tier limits: 10K users, 50K reads/day\
-  - Có thể exceed khi scale\
-  - Vendor lock-in concerns\
-  - No SLA for free tier],
-  [*Resolution:*\
-  - Monitor usage dashboard weekly\
-  - Plan upgrade sang Blaze plan khi reach 80% limits\
-  - Estimated cost: ~1500 USD/month cho 50K users\
-  - Keep abstraction layer để dễ migrate],
-  [Firebase tốt cho MVP và rapid development. Trade-off: Convenience vs vendor lock-in và cost khi scale. Alternative: Self-hosted auth (Keycloak) + PostgreSQL. Decision: Stick với Firebase cho phase 1, evaluate alternatives ở phase 2 based on actual usage.],
+  (Xác thực & Database)\
+  Chi phí: Free tier → Blaze plan],
+  [*Vấn đề:* Giới hạn free tier, vendor lock-in\
+  \ *Giải quyết:*\
+  - Theo dõi usage hàng tuần\
+  - Upgrade khi đạt 80% giới hạn\
+  - Chi phí ước tính: ~1500 USD/tháng cho 50K users\
+  - Giữ abstraction layer để dễ migrate],
+  [Firebase tốt cho MVP. Trade-off: tiện lợi vs vendor lock-in và chi phí khi scale. Quyết định: dùng Firebase cho phase 1, đánh giá alternatives ở phase 2.],
   
   [*GitHub*\
-  (Version Control & Project Management)\
-  \ Cost: Free tier],
-  [*Issue:*\
-  - Free tier chỉ có basic features\
-  - Thiếu advanced CI/CD (limits 2000 minutes/month)\
-  - Project management features cơ bản\
-  - No advanced security scanning],
-  [*Resolution:*\
-  - Sử dụng GitHub Actions trong free quota\
-  - Optimize workflow để tiết kiệm minutes\
-  - 2000 minutes/month đủ cho small team (5 people)\
-  - Self-hosted runners nếu cần more capacity],
-  [GitHub Projects tốt cho basic Kanban. Đủ cho dự án học tập. Alternative cho production: GitLab (self-hosted, unlimited CI/CD) hoặc Jira (better Scrum support, 7 USD/user/month). For now, GitHub free tier meets needs. Monitor CI/CD usage monthly.],
+  (Version Control)\
+  Chi phí: Free tier],
+  [*Vấn đề:* Free tier hạn chế CI/CD (2000 minutes/tháng)\
+  \ *Giải quyết:*\
+  - Tối ưu workflow tiết kiệm minutes\
+  - 2000 minutes/tháng đủ cho nhóm nhỏ\
+  - Self-hosted runners nếu cần],
+  [GitHub Projects đủ cho Kanban cơ bản. Đủ cho dự án học tập. Alternative: GitLab (self-hosted) hoặc Jira. Hiện tại GitHub free tier đáp ứng nhu cầu.],
   
-  [*ChatGPT / OpenAI*\
-  (AI Assistant)\
-  \ Cost: 20 USD/user/month (optional Plus)],
-  [*Issue:*\
-  - No formal SLA\
-  - Output quality varies, cần review\
-  - Plagiarism và copyright concerns\
-  - Ethical considerations\
-  - Team members có usage levels khác nhau],
-  [*Resolution:*\
-  - Establish AI usage guidelines:\
-    + Always review AI output\
-    + Customize trước khi use\
-    + Document AI usage trong files\
-    + No blind copy-paste\
-  - Optional: Team shares 2-3 Plus accounts\
-  - Training session về responsible AI use],
-  [AI là tool hỗ trợ, không thay thế thinking. Benefits: Faster brainstorming, better templates, learning catalyst. Risks: Over-reliance, plagiarism. Guidelines critical cho academic và professional integrity. Cost: 20 USD/month Plus optional, free tier đủ với proper usage. ROI positive nếu dùng đúng cách.],
+  [*ChatGPT*\
+  (Trợ lý AI)\
+  Chi phí: 20 USD/user/tháng],
+  [*Vấn đề:* Chất lượng đầu ra không ổn định, lo ngại đạo văn\
+  \ *Giải quyết:*\
+  - Thiết lập hướng dẫn sử dụng AI\
+  - Luôn review output\
+  - Tùy chỉnh trước khi dùng\
+  - Ghi rõ AI usage\
+  - Training về sử dụng AI có trách nhiệm],
+  [AI là công cụ hỗ trợ, không thay thế tư duy. Lợi ích: brainstorming nhanh, templates tốt hơn. Rủi ro: phụ thuộc quá mức, đạo văn. Guidelines quan trọng cho tính toàn vẹn học thuật.],
   
-  [*Typst / Document Tools*\
-  (Documentation)\
-  \ Cost: Free (open-source)],
-  [*Issue:*\
-  - Learning curve cho syntax mới\
-  - Limited ecosystem compared to LaTeX\
-  - Collaboration features cơ bản\
-  - No official VS Code extension initially],
-  [*Resolution:*\
-  - Team training session về Typst basics\
-  - Create template library cho reuse\
-  - Use Git cho version control docs\
-  - Share best practices và tips\
+  [*Typst*\
+  (Tài liệu)\
+  Chi phí: Miễn phí],
+  [*Vấn đề:* Đường cong học tập cho cú pháp mới\
+  \ *Giải quyết:*\
+  - Buổi training nhóm về Typst basics\
+  - Tạo thư viện template để tái sử dụng\
+  - Dùng Git cho version control\
+  - Chia sẻ best practices\
   - VS Code extension giúp syntax highlighting],
-  [Typst tốt cho technical documents, compile nhanh hơn LaTeX. Learning investment worthwhile. Documents professional và consistent. Alternative: Markdown + Pandoc (simpler) hoặc LaTeX (more mature). For this project, Typst works well. Continue usage cho future docs.],
+  [Typst tốt cho tài liệu kỹ thuật, compile nhanh hơn LaTeX. Đầu tư học xứng đáng. Tài liệu chuyên nghiệp và nhất quán. Tiếp tục sử dụng cho tài liệu tương lai.],
 )
 
-== Other Lessons Learned
+== Bài học khác
 
 #table(
   columns: 2,
   stroke: 0.5pt,
-  [*Areas of Exceptional Performance*], [*Areas for Improvement*],
+  [*Điểm xuất sắc*], [*Cần cải thiện*],
   
-  [*Project Management:*\
-  - Comprehensive planning: Project Charter, WBS, Stakeholder Register, Risk Register đầy đủ\
-  - 3 cost estimation methods (Parametric, Analogous, Three-Point) cho accuracy\
-  - Hybrid approach: Waterfall (planning/deployment) + Agile (development) balanced\
-  - Clear STCQ objectives: Scope, Time 24 weeks, Cost 500M, Quality metrics\
-  - EVM framework setup cho tracking (CPI, SPI, EV, AC)],
-  [*Project Management:*\
-  - Change control process cần formalize và document\
-  - Risk reviews không đều đặn, cần schedule weekly/monthly\
-  - Stakeholder engagement chưa đồng đều (Government, Marketing ít engaged)\
-  - Procurement process chưa documented, vendor evaluation matrix thiếu\
-  - PMO structure cần thiết cho larger projects\
-  - Lessons learned sessions cần schedule thường xuyên hơn],
+  [*Quản lý dự án:*\
+  - Lập kế hoạch toàn diện: Project Charter, WBS, Stakeholder Register đầy đủ\
+  - 3 phương pháp ước lượng chi phí cho độ chính xác\
+  - Tiếp cận hybrid: Waterfall (lập kế hoạch) + Agile (phát triển)\
+  - Mục tiêu STCQ rõ ràng\
+  - Framework EVM cho theo dõi],
+  [*Quản lý dự án:*\
+  - Quy trình kiểm soát thay đổi cần chính thức hóa\
+  - Đánh giá rủi ro không đều đặn\
+  - Tương tác với các bên chưa đồng đều\
+  - Quy trình mua sắm chưa tài liệu hóa\
+  - Cần cấu trúc PMO cho dự án lớn hơn],
   
-  [*Software Development:*\
-  - Architecture rõ ràng: Client-Server, RESTful API, RBAC\
-  - Modern tech stack: React Native (cross-platform), Node.js + Express\
-  - Module design tốt: Class, Schedule, Assignment, Grading, Document Management\
-  - Version control với GitHub, branching strategy\
-  - Some automation setup (CI/CD concepts)\
-  - Scrum ceremonies đều đặn: Planning, Standup, Review, Retro],
-  [*Software Development:*\
-  - Code quality metrics chưa track (coverage, complexity, technical debt)\
-  - API contract chưa consistent ban đầu, cần contract-first approach\
-  - Naming conventions chưa standardized từ đầu\
-  - Staging environment setup muộn, cần IaC (Infrastructure as Code)\
-  - CI/CD pipeline chưa fully automated, manual steps còn nhiều\
-  - Security testing chưa đầy đủ (penetration testing, OWASP Top 10)\
-  - Performance testing late, cần shift-left],
+  [*Phát triển phần mềm:*\
+  - Kiến trúc rõ ràng: Client-Server, RESTful API, RBAC\
+  - Tech stack hiện đại: React Native, Node.js\
+  - Thiết kế module tốt\
+  - Version control với GitHub\
+  - Scrum ceremonies đều đặn],
+  [*Phát triển phần mềm:*\
+  - Metrics chất lượng code chưa track\
+  - API contract chưa nhất quán ban đầu\
+  - Quy ước đặt tên chưa chuẩn từ đầu\
+  - Thiết lập môi trường staging muộn\
+  - CI/CD pipeline chưa tự động hóa hoàn toàn\
+  - Kiểm thử bảo mật chưa đầy đủ],
   
-  [*Teamwork & Collaboration:*\
-  - Scrum roles clear: PO (Phúc), SM (Khang, Hiệp), Dev (Huy, Tùng)\
-  - Daily standup effective: Yesterday-Today-Blockers format\
-  - Blockers escalated và resolved trong 24h\
-  - Retrospective sau mỗi phase cho continuous improvement\
-  - Some members exceptionally fast: Khang (2h 38min)\
-  - Collaborative problem-solving cho technical issues],
-  [*Teamwork & Collaboration:*\
-  - Communication gaps giai đoạn A (ít trao đổi, làm thay nhau)\
-  - Uneven workload distribution, một số members overloaded Sprint 2-3\
-  - Code review process chưa mandatory, quality inconsistent\
-  - Cross-team communication (FE-BE) cần improve\
-  - Conflict resolution skills cần develop\
-  - Team building activities thiếu, morale management\
-  - Knowledge sharing sessions không regular],
+  [*Làm việc nhóm:*\
+  - Vai trò Scrum rõ ràng\
+  - Họp hàng ngày hiệu quả\
+  - Vướng mắc được giải quyết trong 24h\
+  - Hồi cố sau mỗi phase\
+  - Một số thành viên hoàn thành cực nhanh\
+  - Giải quyết vấn đề cộng tác tốt],
+  [*Làm việc nhóm:*\
+  - Khoảng cách giao tiếp giai đoạn A\
+  - Phân công khối lượng không đều\
+  - Quy trình review code chưa bắt buộc\
+  - Giao tiếp cross-team cần cải thiện\
+  - Kỹ năng giải quyết xung đột cần phát triển\
+  - Thiếu hoạt động team building],
   
-  [*Technology & Tools:*\
-  - Modern stack adoption: React Native cho mobile cross-platform\
-  - Cloud-native approach với Firebase và AWS/GCP\
-  - Open-source tools tiết kiệm cost\
-  - AI utilization (ChatGPT) cho productivity và learning\
-  - Documentation tools (Typst) professional output\
-  - GitHub Projects cho Kanban board simple và effective],
-  [*Technology & Tools:*\
-  - Learning curve cho new tech (Typst, Firebase) steep\
-  - Dev environment setup time-consuming, cần Docker/scripting\
-  - Tool integration chưa seamless (GitHub, Jira, Slack)\
-  - Monitoring và observability thiếu (logs, metrics, tracing)\
-  - Disaster recovery plan không có\
-  - Database backup strategy chưa implement\
-  - Performance monitoring tools chưa setup],
+  [*Công nghệ:*\
+  - Áp dụng stack hiện đại\
+  - Tiếp cận cloud-native\
+  - Công cụ mã nguồn mở tiết kiệm chi phí\
+  - Sử dụng AI cho năng suất và học tập\
+  - Công cụ tài liệu chuyên nghiệp\
+  - GitHub Projects cho Kanban đơn giản],
+  [*Công nghệ:*\
+  - Đường cong học tập cho công nghệ mới\
+  - Thiết lập môi trường dev mất thời gian\
+  - Tích hợp công cụ chưa mượt mà\
+  - Thiếu monitoring và observability\
+  - Không có kế hoạch disaster recovery\
+  - Chiến lược backup database chưa implement],
   
-  [*Communication & Documentation:*\
-  - Multi-channel approach: Email, meetings, Jira, surveys, demos\
-  - Escalation process 3 levels rõ ràng\
-  - Kick-off meeting Q&A effective\
-  - Scrum meeting minutes chi tiết và structured\
-  - Sprint demos cho stakeholders feedback\
-  - Báo cáo cuối kỳ comprehensive (850 dòng, 5 phần)\
-  - Slide thuyết trình 15 phút, 100% tiếng Việt],
-  [*Communication & Documentation:*\
-  - Meeting minutes không distributed ngay sau meeting\
-  - Some stakeholders unresponsive, need follow-up strategy\
-  - Dashboard cho stakeholders self-service info thiếu\
-  - API documentation chưa auto-generated (Swagger/OpenAPI)\
-  - User documentation (manual, FAQs) chưa có\
-  - Sprint reports chưa automated từ Jira\
-  - Burndown charts chưa real-time, manual update],
+  [*Giao tiếp & Tài liệu:*\
+  - Tiếp cận đa kênh hiệu quả\
+  - Quy trình báo cáo 3 cấp rõ ràng\
+  - Họp khởi động Q&A hiệu quả\
+  - Biên bản họp Scrum chi tiết\
+  - Sprint demos cho feedback\
+  - Báo cáo cuối kỳ toàn diện\
+  - Slide 15 phút, 100% tiếng Việt],
+  [*Giao tiếp & Tài liệu:*\
+  - Biên bản họp không phân phối ngay\
+  - Một số bên liên quan không phản hồi\
+  - Thiếu dashboard tự phục vụ\
+  - Tài liệu API chưa tự động\
+  - Tài liệu người dùng chưa có\
+  - Báo cáo Sprint chưa tự động\
+  - Biểu đồ Burndown chưa realtime],
   
-  [*Quality Assurance:*\
-  - Quality standards based on ISO/IEC 25010\
-  - Clear objectives: response time dưới 2s, uptime trên 99.5%, satisfaction trên 90%\
-  - Testing process defined: Unit → Integration → UAT\
-  - Automation tools planned: Selenium, Postman, Jest\
-  - Bug tracking trong Jira với priority và severity\
-  - Acceptance criteria cho user stories],
-  [*Quality Assurance:*\
-  - UAT chưa với real end-users (teachers, students)\
-  - Test coverage chưa measure và track\
-  - Security testing incomplete (no pen testing)\
-  - Performance testing muộn (Sprint 3), cần earlier\
-  - Definition of Done chưa strict enforce\
-  - Test automation chưa implement đầy đủ\
-  - Regression testing manual, time-consuming],
+  [*Đảm bảo chất lượng:*\
+  - Tiêu chuẩn dựa ISO/IEC 25010\
+  - Mục tiêu rõ ràng\
+  - Quy trình kiểm thử định nghĩa\
+  - Công cụ tự động hóa được lên kế hoạch\
+  - Theo dõi bug trong Jira\
+  - Tiêu chí chấp nhận cho user stories],
+  [*Đảm bảo chất lượng:*\
+  - UAT chưa với người dùng thật\
+  - Test coverage chưa đo và theo dõi\
+  - Kiểm thử bảo mật không đầy đủ\
+  - Kiểm thử performance muộn\
+  - Định nghĩa Hoàn thành chưa chặt chẽ\
+  - Test tự động hóa chưa implement đầy đủ\
+  - Regression testing thủ công tốn thời gian],
   
-  [*Process & Methodology:*\
-  - Hybrid Waterfall-Agile phù hợp: Planning với Waterfall, Development với Agile\
-  - 2-week sprints effective cho tracking và adjustment\
-  - Retrospective format Start-Stop-Continue clear\
-  - Lessons learned documented sau mỗi phase\
-  - Velocity tracking giúp sprint planning (avg 32.7 story points)\
-  - Sprint ceremonies đều đặn: Planning, Standup, Review, Retro],
-  [*Process & Methodology:*\
-  - Process improvements chưa quantified bằng metrics\
-  - Không có process documentation (playbook, runbook)\
-  - Chưa compare với industry benchmarks (DORA metrics)\
-  - Action items từ retrospective chưa track completion\
-  - Sprint planning estimation accuracy cần improve\
-  - Definition of Ready cho user stories chưa có\
-  - Release process chưa documented và tested],
-  
-  [*Learning & Growth:*\
-  - Rapid learning: PMBOK, Agile/Scrum, EVM, Risk Management\
-  - Hands-on experience với modern tech stack\
-  - Real project management challenges và solutions\
-  - Cross-functional skills: BA, PM, Dev, QA\
-  - AI tools adoption cho productivity\
-  - Problem-solving skills through blockers\
-  - Academic knowledge applied to real scenarios],
-  [*Learning & Growth:*\
-  - Knowledge gaps trong advanced topics (security, scalability)\
-  - Need more exposure to production systems\
-  - Soft skills (communication, negotiation) cần develop\
-  - Technical depth trong specific areas shallow\
-  - Industry best practices exposure limited\
-  - Mentorship và coaching opportunities thiếu\
-  - Continuous learning plan không structured],
+  [*Học tập & Phát triển:*\
+  - Học nhanh: PMBOK, Agile/Scrum, EVM\
+  - Kinh nghiệm thực tế với tech stack hiện đại\
+  - Thách thức quản lý dự án thật và giải pháp\
+  - Kỹ năng đa chức năng: BA, PM, Dev, QA\
+  - Áp dụng công cụ AI cho năng suất\
+  - Kỹ năng giải quyết vấn đề qua vướng mắc],
+  [*Học tập & Phát triển:*\
+  - Khoảng trống kiến thức trong các chủ đề nâng cao\
+  - Cần nhiều tiếp xúc với hệ thống production\
+  - Kỹ năng mềm cần phát triển\
+  - Độ sâu kỹ thuật trong các lĩnh vực cụ thể còn nông\
+  - Tiếp xúc hạn chế với best practices ngành\
+  - Thiếu cơ hội mentorship và coaching\
+  - Kế hoạch học liên tục chưa có cấu trúc],
 )

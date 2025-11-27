@@ -10,7 +10,7 @@
 - Vẽ sơ đồ đặc tả các tính năng
 
 === Thiết kế hệ thống
-==== Thiết kế giao diện & kỹ thu
+==== Thiết kế giao diện & kỹ thuật
 
 - Giao diện trang chủ
 - Giao diện đăng kí, đăng nhập, đăng xuất
