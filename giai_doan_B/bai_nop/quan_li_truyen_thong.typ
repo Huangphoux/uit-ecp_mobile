@@ -99,10 +99,10 @@
 - Người dùng có khả năng nhận email/thông báo qua ứng dụng.
 - Hạ tầng đáp ứng ổn định, IT hỗ trợ kịp thời.
 - Không phát triển module thanh toán ở giai đoạn đầu.
-- Ngân sách 200 triệu là cố định trừ khi được phê duyệt bổ sung.
+- Ngân sách 500 triệu là cố định trừ khi được phê duyệt bổ sung.
 
 = Constraints
-- Ngân sách hạn chế (200 triệu).
+- Ngân sách hạn chế (500 triệu).
 - Thời gian triển khai 4–6 tháng.
 - Nhân sự dev/QA hạn chế.
 - Yêu cầu pháp lý có thể ảnh hưởng tiến độ.

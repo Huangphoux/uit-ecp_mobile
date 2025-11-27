@@ -6,8 +6,8 @@
   date: datetime.today().display(),
   authors: "Nhóm 2",
   
-  ratio: 4 / 3, // giữ cái này tại mắt yếu
-  layout: "small", // giữ cái này tại mắt yếu
+  ratio: 4 / 3,
+  layout: "small", 
   title-color: fuchsia,
   toc: true,
   theme: "full",
@@ -38,7 +38,7 @@
   [*Tiêu chí*], [*Mục tiêu*], [*KPI*],
   [*Phạm vi*], [Ứng dụng di động quản lý toàn diện], [Tất cả module nghiệm thu],
   [*Thời gian*], [Hoàn thành trong 4-6 tháng], [100% cột mốc đúng hạn],
-  [*Chi phí*], [Ngân sách 200 triệu VNĐ], [±10% chênh lệch],
+  [*Chi phí*], [Ngân sách 500 triệu VNĐ], [±10% chênh lệch],
   [*Chất lượng*], [Bảo mật cao, dễ dùng], [≥70% hài lòng],
 )
 
@@ -84,11 +84,11 @@
 4. Hệ thống báo cáo & thống kê
 5. Tài liệu hướng dẫn
 
-*Ngân sách:* 200 triệu VNĐ
-- Nhân lực (65%): 130 triệu
-- Công nghệ (20%): 40 triệu  
-- Đào tạo (5%): 10 triệu
-- Dự phòng (10%): 20 triệu
+*Ngân sách:* 500 triệu VNĐ
+- Nhân lực (65%): 325 triệu
+- Công nghệ (20%): 100 triệu
+- Đào tạo (5%): 25 triệu
+- Dự phòng (10%): 50 triệu
 
 == Cấu trúc phân rã công việc
 

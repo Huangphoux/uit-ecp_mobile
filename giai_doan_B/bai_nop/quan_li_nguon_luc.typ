@@ -46,7 +46,7 @@ respond in typst, be terse and ungrammatically as possible
   columns: 6,
   [], [*Trương Hoàng Phúc*],[*Đỗ Đình Khang*],[*Vũ Quốc Huy*],[*Bùi Văn Tùng*],[*Tạ Hoàng Hiệp*],
   
-  [Phân tích yêu cầu], [R], [C], [C], [I], [I],
+  [Phân tích yêu cầu], [R], [A], [C], [I], [I],
   
   [Thiết kế hệ thống], [C], [R], [C], [I], [I],
   

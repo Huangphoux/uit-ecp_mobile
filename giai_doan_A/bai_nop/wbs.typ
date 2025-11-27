@@ -10,28 +10,22 @@
 - Vẽ sơ đồ đặc tả các tính năng
 
 === Thiết kế hệ thống
-==== Thiết kế giao diện (UI/UX)
+==== Thiết kế giao diện & kỹ thu
 
 - Giao diện trang chủ
 - Giao diện đăng kí, đăng nhập, đăng xuất
 - Giao diện lớp học (tài liệu, bài tập, điểm)
 - Giao diện quản trị (quản lý giảng viên, sinh viên)
-
-==== Thiết kế kỹ thuật
-
 - Thiết kế cơ sở dữ liệu (user, lớp học, bài tập, điểm số)
 - Thiết kế API (đăng nhập, tạo lớp, nộp bài, chấm điểm)
 - Thiết kế kiến trúc bảo mật (phân quyền, bảo mật dữ liệu)
 
 === Phát triển & Kiểm thử
-==== Phát triển front-end
+==== Phát triển front-end & back-end
 
 - Trang đăng nhập / đăng ký
 - Trang quản lý lớp học
 - Trang nộp bài & chấm điểm
-
-==== Phát triển back-end
-
 - API quản lý người dùng
 - API quản lý lớp học
 - API nộp bài, chấm điểm, phản hồi

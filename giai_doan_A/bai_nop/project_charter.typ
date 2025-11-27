@@ -79,7 +79,7 @@ Tạo ra một hệ thống trực tuyến giúp trung tâm ngoại ngữ quản
 )
 
 === Preapproved Financial Resources
-200 triệu Việt Nam đồng
+500 triệu Việt Nam đồng
 
 #table(
   columns:2,

@@ -12,7 +12,7 @@ Qua môn học, em đã nắm vững các khái niệm cốt lõi về quản l�
 - *Triple Constraint:* Hiểu rõ mối quan hệ giữa Scope-Time-Cost và cách cân bằng khi có thay đổi
 
 === Quản lý chi phí
-Thông qua việc lập kế hoạch chi phí cho dự án 200 triệu VNĐ, em đã học được:
+Thông qua việc lập kế hoạch chi phí cho dự án 500 triệu VNĐ, em đã học được:
 - *3 phương pháp ước lượng:*
   - Parametric Estimates: Tính theo đơn giá × số lượng (dev hours, cloud instances)
   - Analogous Estimates: So sánh với dự án tương tự đã làm

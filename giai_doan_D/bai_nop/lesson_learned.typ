@@ -7,7 +7,7 @@
 - Data Prepared: #today.display("[day]/[month]/[year]")
 - Project Manager: Nhóm 2
 - Duration: Giai đoạn A-D (24 tuần)
-- Budget: 200,000,000 VNĐ
+- Budget: 500,000,000 VNĐ
 
 = Project Performance Analysis
 #table(
@@ -45,7 +45,7 @@
   
   [Cost estimating and control], 
   [- Sử dụng 3 phương pháp ước lượng: Parametric, Analogous, Three-Point\
-  - Baseline 200M VNĐ với phân bổ rõ: 65% labor, 20% tech, 5% training, 10% contingency\
+  - Baseline 500M VNĐ với phân bổ rõ: 65% labor, 20% tech, 5% training, 10% contingency\
   - EVM tracking với CPI, SPI được setup\
   - Control thresholds rõ ràng (5%, 10%)],
   [- Analogous estimate range quá rộng (100-210M)\
@@ -449,7 +449,7 @@
   - Comprehensive planning: Project Charter, WBS, Stakeholder Register, Risk Register đầy đủ\
   - 3 cost estimation methods (Parametric, Analogous, Three-Point) cho accuracy\
   - Hybrid approach: Waterfall (planning/deployment) + Agile (development) balanced\
-  - Clear STCQ objectives: Scope, Time 24 weeks, Cost 200M, Quality metrics\
+  - Clear STCQ objectives: Scope, Time 24 weeks, Cost 500M, Quality metrics\
   - EVM framework setup cho tracking (CPI, SPI, EV, AC)],
   [*Project Management:*\
   - Change control process cần formalize và document\

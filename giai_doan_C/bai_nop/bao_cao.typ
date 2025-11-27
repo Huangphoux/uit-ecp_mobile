@@ -313,33 +313,77 @@ Việc quản lý stakeholder đóng vai trò quan trọng trong thành công c�
 Dự án sử dụng nhiều phương pháp ước lượng chi phí để đảm bảo độ chính xác:
 
 - Parametric Estimates (Ước lượng tham số):
-- Dev extra hours cho rework: 300 giờ × 200,000 đ/giờ = 60,000,000 đ
+- Dev extra hours cho rework: 1,500 giờ × 200,000 đ/giờ = 300,000,000 đ
 - QA overrun hours: 150 giờ × 150,000 đ/giờ = 22,500,000 đ
-- Cloud hosting: 12 instance-months × 1,500,000 đ = 18,000,000 đ
+- Cloud hosting overrun: 12 instance-months × 1,500,000 đ = 18,000,000 đ
 - 3rd-party licenses: 3 × 5,000,000 đ = 15,000,000 đ
 - Security audit: 1 × 20,000,000 đ = 20,000,000 đ
-- _Subtotal:_ 178,300,000 đ + Contingency 10% = *196,130,000 đ*
+- Data migration: 80 giờ × 150,000 đ/giờ = 12,000,000 đ
+- Training sessions: 4 sessions × 10,000,000 đ = 40,000,000 đ
+- Legal/compliance: 1 × 8,000,000 đ = 8,000,000 đ
+- UX adjustments: 60 giờ × 180,000 đ/giờ = 10,800,000 đ
+- _Subtotal:_ 446,300,000 đ
+- _Contingency (10%):_ 44,630,000 đ
+- _Grand Total:_ *490,930,000 đ* (làm tròn: *491 triệu đ*)
 
 - Analogous Estimates (Ước lượng tương tự):
 Dựa vào các dự án tương tự đã thực hiện:
-- LMS nhỏ (2019): 150 triệu × 1.4 = 210 triệu
-- Website quản lý lớp (2020): 80 triệu × 1.25 = 100 triệu
-- App học tiếng (2021): 120 triệu × 1.5 = 180 triệu
+- LMS nhỏ (2019): 300 triệu × 1.4 = 420 triệu
+- Website quản lý lớp (2020): 200 triệu × 1.25 = 250 triệu
+- App học tiếng (2021): 150 triệu × 1.5 = 225 triệu
+- Hạ tầng cloud (2022): 90 triệu × 1.6 = 144 triệu
+- Tích hợp thanh toán (2020): 50 triệu × 1.2 = 60 triệu
+- Audit bảo mật (2023): 35 triệu × 1.3 = 45.5 triệu
+- Đào tạo nhân sự (2021): 30 triệu × 1.5 = 45 triệu
+- Thiết kế UX/UI (2022): 40 triệu × 1.2 = 48 triệu
+- _Trung bình:_ Khoảng *405 triệu đ*
 
 - Three-Point Estimates (Ước lượng ba điểm):
 Sử dụng công thức PERT: Expected = (Optimistic + 4×Most Likely + Pessimistic) / 6
-- Dev rework: (50tr + 4×60tr + 90tr) / 6 = 63.3 triệu
-- QA overrun: (18tr + 4×22.5tr + 30tr) / 6 = 23 triệu
-- Cloud hosting: (12tr + 4×18tr + 30tr) / 6 = 19 triệu
+
+#table(
+  columns: 4,
+  stroke: 0.5pt,
+  [*Hạng mục*], [*Optimistic*], [*Most Likely*], [*Expected*],
+  [Dev rework], [250,000,000đ], [300,000,000đ], [308,300,000đ],
+  [QA overrun], [18,000,000đ], [22,500,000đ], [23,000,000đ],
+  [Cloud hosting], [12,000,000đ], [18,000,000đ], [19,000,000đ],
+  [3rd-party licenses], [10,000,000đ], [15,000,000đ], [15,800,000đ],
+  [Security audit], [15,000,000đ], [20,000,000đ], [21,700,000đ],
+  [Data migration], [8,000,000đ], [12,000,000đ], [12,700,000đ],
+  [Training], [36,000,000đ], [40,000,000đ], [40,700,000đ],
+  [Legal], [6,000,000đ], [8,000,000đ], [8,800,000đ],
+  [UX adjustments], [8,000,000đ], [10,800,000đ], [11,500,000đ],
+  [*Total*], [], [], [*~461 triệu*],
+)
+
+- Bottom-Up Estimates (Ước lượng từ dưới lên):
+Chi tiết từng hạng mục:
+
+#table(
+  columns: 3,
+  stroke: 0.5pt,
+  [*ID*], [*Hạng mục*], [*Chi phí (VND)*],
+  [1], [Dev rework (1,500h × 200,000 đ)], [302,000,000 đ],
+  [2], [QA overrun (300h × 150,000 đ)], [60,000,000 đ],
+  [3], [Cloud hosting + setup], [31,200,000 đ],
+  [4], [3rd-party licenses], [18,000,000 đ],
+  [5], [Security audit], [24,000,000 đ],
+  [6], [Data migration (80h × 150,000 đ)], [14,400,000 đ],
+  [7], [Training (material + travel)], [42,000,000 đ],
+  [8], [Legal/compliance], [10,800,000 đ],
+  [9], [UX adjustments (60h × 180,000 đ)], [12,960,000 đ],
+  [*Total*], [], [*513,060,000 đ*],
+)
 
 === Baseline chi phí
 
-Tổng ngân sách: *200 triệu VNĐ*
+Tổng ngân sách: *500 triệu VNĐ*
 
 Phân bổ:
-- Nhân lực (65%): 130 triệu
-- Công nghệ (20%): 40 triệu
-- Đào tạo & tài liệu (5%): 10 triệu
+- Nhân lực (65%): 325 triệu
+- Công nghệ (20%): 100 triệu
+- Đào tạo & tài liệu (5%): 25 triệu
 - Dự phòng (10%): 20 triệu
 
 === Kiểm soát chi phí
@@ -416,7 +460,7 @@ Dự án "Ứng dụng quản lý lớp học trực tuyến" có những đặc
 - Yêu cầu khá rõ ràng từ đầu (các chức năng quản lý cơ bản)
 - Có thể có thay đổi nhỏ dựa trên feedback từ giáo viên, học viên
 - Cần demo sớm để lấy ý kiến người dùng
-- Thời gian và ngân sách hạn chế (4-6 tháng, 200 triệu)
+- Thời gian và ngân sách hạn chế (4-6 tháng, 500 triệu)
 - Team nhỏ, cần sự phối hợp chặt chẽ
 
 === Đề xuất: Hybrid Approach (Kết hợp)

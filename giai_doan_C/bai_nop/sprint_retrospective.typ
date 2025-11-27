@@ -2,8 +2,7 @@
 // giữ y nguyên cái này
 // Đề mục đầu phải là đề mục 1
 
-
-= Em xin lỗi vì đã hỏi cái máy ạ 😢
+= Prompt Cho AI
 > read the typ file in this workspace, then fill this typ for me
 > read other file too, not just retrospective
 
