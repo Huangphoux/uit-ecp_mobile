@@ -1,4 +1,4 @@
-#set heading(level: 1)
+#set heading(level: 2)
 // giữ y nguyên cái này
 // Đề mục đầu phải là đề mục 1
 

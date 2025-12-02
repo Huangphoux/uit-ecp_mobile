@@ -1,4 +1,6 @@
-﻿#import "@preview/basic-report:0.3.1": *
+﻿#set heading(level: 2)
+
+#import "@preview/basic-report:0.3.1": *
 
 #show: it => basic-report(
   doc-category: "Quản lý dự án Phát triển Phần mềm - SE358.Q11

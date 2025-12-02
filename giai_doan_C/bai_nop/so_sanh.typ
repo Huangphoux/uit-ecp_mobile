@@ -1,4 +1,4 @@
-#set heading(level: 1)
+#set heading(level: 2)
 = Phân tích Agile vs Waterfall lĩnh vực Rủi ro
 = Em xin lỗi vì đã hỏi cái máy ạ 😢
 
