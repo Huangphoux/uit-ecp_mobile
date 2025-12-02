@@ -119,3 +119,12 @@ Dựa trên phân tích rủi ro và đặc thù của dự án "Ứng dụng qu
 
 *Kết luận:* Waterfall quá rủi ro cho các dự án phần mềm hiện đại hướng tới người dùng cuối (B2C/B2B2C). Agile tuy đòi hỏi sự cam kết cao hơn về giao tiếp nhưng mang lại sự an toàn về mặt giá trị sản phẩm (Value-driven delivery).
 
+=== Hỗ trợ từ AI
+
+==== Prompt 
+
+Phân tích Agile vs Waterfall trong lĩnh vực quản trị rủi ro và case study là Ứng dụng quản lý lớp học trực tuyến cho trung tâm ngoại ngữ, bảng so sánh cần chi tiết và dài khoảng 2-3 trang.
+
+===== Phản hồi của Gemini
+
+Bảng so sánh giữa Agile và Waterfall.
