@@ -1,4 +1,8 @@
 #set heading(level: 2)
+= Prompt Cho AI
+> read the .typ files in this folder, and creat content for this file for me 
+> Analyze the content of those files in details
+
 
 = Sprint Backlog
 
