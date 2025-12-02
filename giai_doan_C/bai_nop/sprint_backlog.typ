@@ -1,10 +1,14 @@
-#set heading(level: 1)
+#set heading(level: 2)
+= Prompt Cho AI
+> read the .typ files in this folder, and creat content for this file for me 
+> Analyze the content of those files in details
+
 
 = Sprint Backlog
 
 = Phân vai Scrum
 
-== Sản phẩm chủ sở hữu (Product Owner)
+== Product Owner
 
 Trương Hoàng Phúc (23521224)
 
@@ -13,7 +17,7 @@ Trương Hoàng Phúc (23521224)
 - Duyệt demo sản phẩm cuối mỗi Sprint
 - Xác định policy khi gặp xung đột yêu cầu
 
-== Chủ nhân xì trum (Scrum Master)
+== Scrum Master
 
 Đỗ Đình Khang (23520682)
 
@@ -29,7 +33,7 @@ Tạ Hoàng Hiệp (23520466)
 - Phối hợp với DevOps cho infrastructure setup
 - Track blockers liên quan đến infrastructure
 
-== Biệt đội phát triển (Development Team)
+== Development Team
 
 Vũ Quốc Huy (23520657) - Backend Developer
 
