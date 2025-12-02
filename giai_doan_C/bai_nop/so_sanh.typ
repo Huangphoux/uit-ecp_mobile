@@ -1,6 +1,5 @@
 #set heading(level: 2)
 = Phân tích Agile vs Waterfall lĩnh vực Rủi ro
-= Em xin lỗi vì đã hỏi cái máy ạ 😢
 
 = Nếu thực hiện Waterfall thì sao?
 Mô hình Waterfall tiếp cận dự án theo tư duy tuyến tính: _Yêu cầu -> Thiết kế -> Lập trình -> Kiểm thử -> Triển khai_.
@@ -101,7 +100,7 @@ Dưới đây là bảng đối chiếu chi tiết dựa trên đặc thù của
 
 Dựa trên phân tích rủi ro và đặc thù của dự án "Ứng dụng quản lý lớp học", tôi đề xuất:
 
-*Mô hình được chọn:* **Agile (Cụ thể là Scrum kết hợp Kanban)**
+*Mô hình được chọn:* *Agile (Cụ thể là Scrum kết hợp Kanban)*
 
 == Lí do:
 

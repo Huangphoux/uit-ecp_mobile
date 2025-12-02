@@ -775,6 +775,12 @@ Dự án "Ứng dụng quản lý lớp học trực tuyến" là một trải n
 
 Những bài học này không chỉ áp dụng cho dự án này mà còn là hành trang cho các dự án trong tương lai. Success của dự án không chỉ đo bằng sản phẩm delivered mà còn ở process improvement và team growth.
 
+= AI Usage Note
+- AI là trợ lý, không thay thế tư duy: Mọi output đều được review, fact-check và customize
+- Số liệu được kiểm chứng: Ví dụ budget 500M breakdown theo tỷ lệ chuẩn PMBOK (65% labor, 20% tech, 5% training, 10% contingency)
+- Nội dung 100% tiếng Việt: AI đôi khi output tiếng Anh, nhóm dịch và viết lại cho tự nhiên
+- Ghi rõ AI usage: Tuân thủ academic integrity, minh bạch về công cụ sử dụng
+
 #pagebreak()
 
 = Tài liệu tham khảo
